@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVLLC Pipeline Test</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #232121;
+            margin-bottom: 0.5rem;
+        }
+        .test-label {
+            background: #00ABC7;
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #232121;
+        }
+        label span.required {
+            color: #e53935;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #00ABC7;
+            box-shadow: 0 0 0 2px rgba(0,171,199,0.2);
+        }
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            font-weight: normal;
+        }
+        .checkbox-label input[type="checkbox"] {
+            width: auto;
+            accent-color: #00ABC7;
+        }
+        button {
+            background: #00ABC7;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #008fa8;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        #form-error {
+            background: #ffebee;
+            color: #c62828;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        #success-message {
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        #success-message h2 {
+            margin-bottom: 0.5rem;
+        }
+        .debug-info {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #fff3e0;
+            border-radius: 4px;
+            font-size: 0.875rem;
+        }
+        .debug-info h3 {
+            margin-bottom: 0.5rem;
+            color: #e65100;
+        }
+        .debug-info code {
+            background: #fff;
+            padding: 0.125rem 0.25rem;
+            border-radius: 2px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Creating Value LLC</h1>
+    <span class="test-label">PIPELINE TEST</span>
+
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="first_name">First Name <span class="required">*</span></label>
+            <input type="text" id="first_name" name="first_name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+
+        <div class="form-group">
+            <label for="problem_to_solve">What specific problem do you need solved?</label>
+            <textarea id="problem_to_solve" name="problem_to_solve" placeholder="Please be specific about the outcome you need..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Service Interest</label>
+            <div class="checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="service_interest" value="AI Automation">
+                    <span>AI Automation</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="service_interest" value="Marketing">
+                    <span>Marketing</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="service_interest" value="Consulting">
+                    <span>Consulting</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="service_interest" value="Other">
+                    <span>Other</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="referral_source">How did you hear about us?</label>
+            <textarea id="referral_source" name="referral_source" placeholder="Referral, event, LinkedIn, etc."></textarea>
+        </div>
+
+        <div id="form-error" style="display: none;"></div>
+
+        <button type="submit" id="submit-btn">Submit</button>
+    </form>
+
+    <div id="success-message" style="display: none;">
+        <h2>Thanks!</h2>
+        <p>Your message has been received. We'll be in touch soon.</p>
+    </div>
+
+    <div class="debug-info">
+        <h3>🧪 Test Verification Checklist</h3>
+        <p>After submitting, verify in GHL:</p>
+        <ul>
+            <li>Contact created with correct name/email/phone</li>
+            <li>Tags: <code>CVLLC-Website-Lead</code>, <code>CVLLC-Contact</code></li>
+            <li>Source: <code>CreatingValue Website - Contact Form</code></li>
+            <li>Custom field: CVLLC - Problem to Solve</li>
+            <li>Custom field: CVLLC - Service Interest</li>
+            <li>Custom field: CVLLC - Referral Source</li>
+            <li>Custom field: CVLLC - Source Page = <code>/index.html</code></li>
+        </ul>
+    </div>
+
+    <!-- Form Submission Script -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const btn = document.getElementById('submit-btn');
+            const errorDiv = document.getElementById('form-error');
+            errorDiv.style.display = 'none';
+
+            // Get form values
+            const firstName = document.getElementById('first_name').value.trim();
+            const lastName = document.getElementById('last_name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const problemToSolve = document.getElementById('problem_to_solve').value.trim();
+            const referralSource = document.getElementById('referral_source').value.trim();
+            
+            // Get all checked Service Interest values (multi-select)
+            const serviceInterestCheckboxes = document.querySelectorAll('input[name="service_interest"]:checked');
+            const serviceInterestValues = Array.from(serviceInterestCheckboxes).map(cb => cb.value);
+            const serviceInterest = serviceInterestValues.join(', ');
+
+            // Validate required fields
+            if (!firstName || !email) {
+                errorDiv.textContent = 'Please fill in all required fields.';
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            btn.disabled = true;
+            btn.textContent = 'Submitting...';
+
+            // Build payload with CVLLC custom field IDs
+            const formData = {
+                first_name: firstName,
+                last_name: lastName,
+                email: email,
+                phone: phone,
+                source: 'CreatingValue Website - Contact Form',
+                tags: ['CVLLC-Website-Lead', 'CVLLC-Contact'],
+                customFields: [
+                    // CVLLC - Problem to Solve
+                    { id: 'kWx58y9s3hO3XElQnjlr', field_value: problemToSolve },
+                    // CVLLC - Service Interest
+                    { id: '8w6Mp0B593OCErOkJijr', field_value: serviceInterest },
+                    // CVLLC - Referral Source
+                    { id: 'A5FS2khTVkFLogT0uhpD', field_value: referralSource },
+                    // CVLLC - Source Page (hidden, auto-populated)
+                    { id: 'qyjfcJ8GAxnHGLAFsu4u', field_value: window.location.pathname }
+                ]
+            };
+
+            try {
+                const response = await fetch('/api/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    document.getElementById('contact-form').style.display = 'none';
+                    document.getElementById('success-message').style.display = 'block';
+
+                    // Track conversion in Clicky (check if loaded)
+                    if (typeof clicky !== 'undefined') {
+                        clicky.goal('cvllc_contact_form');
+                    }
+
+                    console.log('Form submitted successfully:', result);
+                } else {
+                    throw new Error(result.error || 'Submission failed');
+                }
+            } catch (error) {
+                console.error('Submission error:', error);
+                errorDiv.textContent = 'Something went wrong. Please try again.';
+                errorDiv.style.display = 'block';
+                btn.disabled = false;
+                btn.textContent = 'Submit';
+            }
+        });
+    </script>
+
+    <!-- Google Analytics GA4 (zero perf impact) -->
+    <script>
+        function _ga4(){
+            var m='G-9Y9MRT5LPJ',c=localStorage.getItem('_ga_cid');
+            if(!c){c=Math.random().toString(36).substr(2)+Date.now().toString(36);localStorage.setItem('_ga_cid',c);}
+            navigator.sendBeacon('https://www.google-analytics.com/g/collect?v=2&tid='+m+'&cid='+c+'&sid='+Date.now()+'&dl='+encodeURIComponent(location.href)+'&dt='+encodeURIComponent(document.title)+'&dr='+encodeURIComponent(document.referrer)+'&en=page_view');
+        }
+        if('requestIdleCallback' in window){requestIdleCallback(function(){setTimeout(_ga4,3000)});}
+        else{window.addEventListener('load',function(){setTimeout(_ga4,5000)});}
+    </script>
+
+    <!-- Clicky Analytics (deferred) -->
+    <script>
+        window.addEventListener('load', function() {
+            var s = document.createElement('script');
+            s.src = '//static.getclicky.com/101462603.js';
+            s.async = true;
+            document.body.appendChild(s);
+        });
+    </script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101462603ns.gif" /></p></noscript>
+</body>
+</html>
