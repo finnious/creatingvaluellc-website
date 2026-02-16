@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Creating Value LLC</title>
+    <meta name="description" content="Get in touch with Creating Value LLC. Send a message or book a 20-minute discovery call to discuss your AI automation needs.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact | Creating Value LLC">
+    <meta property="og:description" content="Get in touch or book a discovery call to discuss your AI automation needs.">
+    <meta property="og:image" content="https://creatingvaluellc.com/images/CVLOGO_bg.png">
+    <meta property="og:url" content="https://creatingvaluellc.com/contact">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@createvaluenow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/CVMARK_black.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/styles.css">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://creatingvaluellc.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact",
+                "item": "https://creatingvaluellc.com/contact"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="header__logo">
+                    <img src="/images/CVLOGO_black.png" alt="Creating Value LLC">
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="/" class="nav__link">Home</a></li>
+                        <li><a href="/about.html" class="nav__link">About</a></li>
+                        <li><a href="/contact.html" class="nav__link nav__link--active">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav__list">
+            <li><a href="/" class="mobile-nav__link">Home</a></li>
+            <li><a href="/about.html" class="mobile-nav__link">About</a></li>
+            <li><a href="/contact.html" class="mobile-nav__link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Let's talk</h1>
+            <p>Have a specific problem you need solved? Not sure if we're the right fit? Either way, I'd rather have a real conversation than trade emails for a week.</p>
+        </div>
+    </section>
+
+    <!-- Contact Grid -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send a message</h2>
+                    
+                    <form id="contact-form" class="form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first_name">First Name <span class="required">*</span></label>
+                                <input type="text" id="first_name" name="first_name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" id="last_name" name="last_name">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="problem_to_solve">What specific problem do you need solved?</label>
+                            <textarea id="problem_to_solve" name="problem_to_solve" placeholder="Please be specific about the outcome you need..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Service Interest</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="service_interest" value="AI Automation">
+                                    <span>AI Automation</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="service_interest" value="Marketing">
+                                    <span>Marketing</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="service_interest" value="Consulting">
+                                    <span>Consulting</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="service_interest" value="Other">
+                                    <span>Other</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="referral_source">How did you hear about us?</label>
+                            <textarea id="referral_source" name="referral_source" placeholder="Referral, event, LinkedIn, etc." style="min-height: 80px;"></textarea>
+                        </div>
+                        
+                        <div id="form-error" class="form-error" style="display: none;"></div>
+                        
+                        <button type="submit" id="submit-btn" class="btn btn--primary" style="width: 100%;">Send Message</button>
+                    </form>
+                    
+                    <div id="form-success" class="form-success" style="display: none;">
+                        <h3>Thanks!</h3>
+                        <p>Your message has been received. I'll be in touch soon.</p>
+                    </div>
+                </div>
+                
+                <!-- TidyCal -->
+                <div class="contact-calendar-section">
+                    <h2>Or book a call directly</h2>
+                    <p style="color: var(--gray-600); margin-bottom: var(--space-md);">Skip the back-and-forth. Grab 20 minutes on my calendar and let's figure out if there's a fit.</p>
+                    
+                    <div class="tidycal-container">
+                        <div class="tidycal-embed" data-path="creatingvalue/20-minute-discovery-call-general"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container container--narrow">
+            <h2>Stay in the loop</h2>
+            <p>Occasional updates on AI automation, practical business insights, and Memphis meetup announcements. No spam. Unsubscribe anytime.</p>
+            
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                <button type="submit" id="newsletter-btn" class="btn btn--primary">Subscribe</button>
+            </form>
+            
+            <div id="newsletter-success" style="display: none; margin-top: var(--space-sm); color: #2e7d32;">
+                ✓ You're subscribed! Thanks for joining.
+            </div>
+            <div id="newsletter-error" style="display: none; margin-top: var(--space-sm); color: #c62828;"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="/images/CV_logotype_white.png" alt="Creating Value">
+                    <p>AI automation and consulting for growth-minded B2B businesses. Based in Memphis, serving clients nationwide.</p>
+                </div>
+                
+                <div class="footer__nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__nav">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/scottfinney/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://www.youtube.com/@CreatingValueLLCMemphis" target="_blank" rel="noopener">YouTube</a></li>
+                        <li><a href="https://x.com/createvaluenow" target="_blank" rel="noopener">X / Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2026 Creating Value LLC. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="/terms.html">Terms & Conditions</a>
+                    <a href="/privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        
+        menuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+        
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                header.classList.add('header--scrolled');
+            } else {
+                header.classList.remove('header--scrolled');
+            }
+        });
+    </script>
+
+    <!-- Contact Form Script -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const btn = document.getElementById('submit-btn');
+            const errorDiv = document.getElementById('form-error');
+            errorDiv.style.display = 'none';
+
+            const firstName = document.getElementById('first_name').value.trim();
+            const lastName = document.getElementById('last_name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const problemToSolve = document.getElementById('problem_to_solve').value.trim();
+            const referralSource = document.getElementById('referral_source').value.trim();
+            
+            const serviceInterestCheckboxes = document.querySelectorAll('input[name="service_interest"]:checked');
+            const serviceInterestValues = Array.from(serviceInterestCheckboxes).map(cb => cb.value);
+            const serviceInterest = serviceInterestValues.join(', ');
+
+            if (!firstName || !email) {
+                errorDiv.textContent = 'Please fill in all required fields.';
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            btn.disabled = true;
+            btn.textContent = 'Sending...';
+
+            const formData = {
+                first_name: firstName,
+                last_name: lastName,
+                email: email,
+                phone: phone,
+                source: 'CreatingValue Website - Contact Form',
+                tags: ['CVLLC-Website-Lead', 'CVLLC-Contact'],
+                customFields: [
+                    { id: 'kWx58y9s3hO3XElQnjlr', field_value: problemToSolve },
+                    { id: '8w6Mp0B593OCErOkJijr', field_value: serviceInterest },
+                    { id: 'A5FS2khTVkFLogT0uhpD', field_value: referralSource },
+                    { id: 'qyjfcJ8GAxnHGLAFsu4u', field_value: window.location.pathname }
+                ]
+            };
+
+            try {
+                const response = await fetch('/api/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    document.getElementById('contact-form').style.display = 'none';
+                    document.getElementById('form-success').style.display = 'block';
+
+                    if (typeof clicky !== 'undefined') {
+                        clicky.goal('cvllc_contact_form');
+                    }
+                } else {
+                    throw new Error(result.error || 'Submission failed');
+                }
+            } catch (error) {
+                errorDiv.textContent = 'Something went wrong. Please try again.';
+                errorDiv.style.display = 'block';
+                btn.disabled = false;
+                btn.textContent = 'Send Message';
+            }
+        });
+
+        // Newsletter Form
+        document.getElementById('newsletter-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const btn = document.getElementById('newsletter-btn');
+            const email = document.getElementById('newsletter-email').value.trim();
+            const errorDiv = document.getElementById('newsletter-error');
+            const successDiv = document.getElementById('newsletter-success');
+            
+            errorDiv.style.display = 'none';
+            successDiv.style.display = 'none';
+
+            if (!email) {
+                errorDiv.textContent = 'Please enter your email.';
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            btn.disabled = true;
+            btn.textContent = 'Subscribing...';
+
+            const formData = {
+                first_name: 'Newsletter',
+                email: email,
+                source: 'CreatingValue Website - Newsletter',
+                tags: ['CVLLC-Website-Lead', 'CVLLC-Newsletter'],
+                customFields: [
+                    { id: 'qyjfcJ8GAxnHGLAFsu4u', field_value: window.location.pathname }
+                ]
+            };
+
+            try {
+                const response = await fetch('/api/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    document.getElementById('newsletter-form').style.display = 'none';
+                    successDiv.style.display = 'block';
+
+                    if (typeof clicky !== 'undefined') {
+                        clicky.goal('cvllc_newsletter');
+                    }
+                } else {
+                    throw new Error(result.error || 'Subscription failed');
+                }
+            } catch (error) {
+                errorDiv.textContent = 'Something went wrong. Please try again.';
+                errorDiv.style.display = 'block';
+                btn.disabled = false;
+                btn.textContent = 'Subscribe';
+            }
+        });
+    </script>
+
+    <!-- TidyCal (deferred) -->
+    <script>
+        window.addEventListener('load', function() {
+            var s = document.createElement('script');
+            s.src = 'https://asset-tidycal.b-cdn.net/js/embed.js';
+            s.async = true;
+            document.body.appendChild(s);
+        });
+    </script>
+
+    <!-- Google Analytics GA4 (zero perf impact) -->
+    <script>
+        function _ga4(){
+            var m='G-9Y9MRT5LPJ',c=localStorage.getItem('_ga_cid');
+            if(!c){c=Math.random().toString(36).substr(2)+Date.now().toString(36);localStorage.setItem('_ga_cid',c);}
+            navigator.sendBeacon('https://www.google-analytics.com/g/collect?v=2&tid='+m+'&cid='+c+'&sid='+Date.now()+'&dl='+encodeURIComponent(location.href)+'&dt='+encodeURIComponent(document.title)+'&dr='+encodeURIComponent(document.referrer)+'&en=page_view');
+        }
+        if('requestIdleCallback' in window){requestIdleCallback(function(){setTimeout(_ga4,3000)});}
+        else{window.addEventListener('load',function(){setTimeout(_ga4,5000)});}
+    </script>
+
+    <!-- Clicky Analytics (deferred) -->
+    <script>
+        window.addEventListener('load', function() {
+            var s = document.createElement('script');
+            s.src = '//static.getclicky.com/101462603.js';
+            s.async = true;
+            document.body.appendChild(s);
+        });
+    </script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101462603ns.gif" /></p></noscript>
+</body>
+</html>

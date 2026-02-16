@@ -1,0 +1,20 @@
+# robots.txt for creatingvaluellc.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://creatingvaluellc.com/sitemap.xml
+
+# AI Crawlers - Welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /

@@ -3,301 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CVLLC Pipeline Test</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            padding: 2rem;
-            max-width: 600px;
-            margin: 0 auto;
-            background: #f5f5f5;
-        }
-        h1 {
-            color: #232121;
-            margin-bottom: 0.5rem;
-        }
-        .test-label {
-            background: #00ABC7;
-            color: white;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-        }
-        form {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .form-group {
-            margin-bottom: 1.25rem;
-        }
-        label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-            color: #232121;
-        }
-        label span.required {
-            color: #e53935;
-        }
-        input, textarea, select {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 1rem;
-            font-family: inherit;
-        }
-        input:focus, textarea:focus, select:focus {
-            outline: none;
-            border-color: #00ABC7;
-            box-shadow: 0 0 0 2px rgba(0,171,199,0.2);
-        }
-        textarea {
-            min-height: 100px;
-            resize: vertical;
-        }
-        .checkbox-group {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-        .checkbox-label {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            cursor: pointer;
-            font-weight: normal;
-        }
-        .checkbox-label input[type="checkbox"] {
-            width: auto;
-            accent-color: #00ABC7;
-        }
-        button {
-            background: #00ABC7;
-            color: white;
-            border: none;
-            padding: 1rem 2rem;
-            font-size: 1rem;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-            font-weight: 600;
-            transition: background 0.2s;
-        }
-        button:hover {
-            background: #008fa8;
-        }
-        button:disabled {
-            background: #ccc;
-            cursor: not-allowed;
-        }
-        #form-error {
-            background: #ffebee;
-            color: #c62828;
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-        }
-        #success-message {
-            background: #e8f5e9;
-            color: #2e7d32;
-            padding: 2rem;
-            border-radius: 8px;
-            text-align: center;
-        }
-        #success-message h2 {
-            margin-bottom: 0.5rem;
-        }
-        .debug-info {
-            margin-top: 2rem;
-            padding: 1rem;
-            background: #fff3e0;
-            border-radius: 4px;
-            font-size: 0.875rem;
-        }
-        .debug-info h3 {
-            margin-bottom: 0.5rem;
-            color: #e65100;
-        }
-        .debug-info code {
-            background: #fff;
-            padding: 0.125rem 0.25rem;
-            border-radius: 2px;
-            font-size: 0.8rem;
-        }
-    </style>
+    <title>Creating Value LLC | AI Automation & Consulting for Growth-Minded Businesses</title>
+    <meta name="description" content="AI automation and consulting for established B2B businesses. We help you maximize your existing leads and transform operations with practical AI implementation.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Creating Value LLC | AI Automation & Consulting">
+    <meta property="og:description" content="AI automation and consulting for growth-minded B2B businesses. Stop letting qualified leads fall through the cracks.">
+    <meta property="og:image" content="https://creatingvaluellc.com/images/CVLOGO_bg.png">
+    <meta property="og:url" content="https://creatingvaluellc.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@createvaluenow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/CVMARK_black.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/styles.css">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://creatingvaluellc.com/#organization",
+        "name": "Creating Value LLC",
+        "url": "https://creatingvaluellc.com",
+        "logo": "https://creatingvaluellc.com/images/CVLOGO_bg.png",
+        "description": "AI automation and consulting for growth-minded B2B businesses",
+        "founder": {
+            "@type": "Person",
+            "name": "Scott Finney"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "13 S Prescott St, Unit 11013",
+            "addressLocality": "Memphis",
+            "addressRegion": "TN",
+            "postalCode": "38111",
+            "addressCountry": "US"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/scottfinney/",
+            "https://www.linkedin.com/company/creatingvalue-llc/",
+            "https://www.youtube.com/@CreatingValueLLCMemphis",
+            "https://x.com/createvaluenow",
+            "https://www.bbb.org/us/tn/memphis/profile/sales-lead-generation/creating-value-llc-0543-44183222/",
+            "https://members.memphischamber.com/list/member/creating-value-llc-21365"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Creating Value LLC",
+        "url": "https://creatingvaluellc.com"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://creatingvaluellc.com"
+        }]
+    }
+    </script>
 </head>
 <body>
-    <h1>Creating Value LLC</h1>
-    <span class="test-label">PIPELINE TEST</span>
-
-    <form id="contact-form">
-        <div class="form-group">
-            <label for="first_name">First Name <span class="required">*</span></label>
-            <input type="text" id="first_name" name="first_name" required>
-        </div>
-
-        <div class="form-group">
-            <label for="last_name">Last Name</label>
-            <input type="text" id="last_name" name="last_name">
-        </div>
-
-        <div class="form-group">
-            <label for="email">Email <span class="required">*</span></label>
-            <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone">
-        </div>
-
-        <div class="form-group">
-            <label for="problem_to_solve">What specific problem do you need solved?</label>
-            <textarea id="problem_to_solve" name="problem_to_solve" placeholder="Please be specific about the outcome you need..."></textarea>
-        </div>
-
-        <div class="form-group">
-            <label>Service Interest</label>
-            <div class="checkbox-group">
-                <label class="checkbox-label">
-                    <input type="checkbox" name="service_interest" value="AI Automation">
-                    <span>AI Automation</span>
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" name="service_interest" value="Marketing">
-                    <span>Marketing</span>
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" name="service_interest" value="Consulting">
-                    <span>Consulting</span>
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" name="service_interest" value="Other">
-                    <span>Other</span>
-                </label>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="header__logo">
+                    <img src="/images/CVLOGO_black.png" alt="Creating Value LLC">
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="/" class="nav__link nav__link--active">Home</a></li>
+                        <li><a href="/about.html" class="nav__link">About</a></li>
+                        <li><a href="/contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
-
-        <div class="form-group">
-            <label for="referral_source">How did you hear about us?</label>
-            <textarea id="referral_source" name="referral_source" placeholder="Referral, event, LinkedIn, etc."></textarea>
-        </div>
-
-        <div id="form-error" style="display: none;"></div>
-
-        <button type="submit" id="submit-btn">Submit</button>
-    </form>
-
-    <div id="success-message" style="display: none;">
-        <h2>Thanks!</h2>
-        <p>Your message has been received. We'll be in touch soon.</p>
-    </div>
-
-    <div class="debug-info">
-        <h3>🧪 Test Verification Checklist</h3>
-        <p>After submitting, verify in GHL:</p>
-        <ul>
-            <li>Contact created with correct name/email/phone</li>
-            <li>Tags: <code>CVLLC-Website-Lead</code>, <code>CVLLC-Contact</code></li>
-            <li>Source: <code>CreatingValue Website - Contact Form</code></li>
-            <li>Custom field: CVLLC - Problem to Solve</li>
-            <li>Custom field: CVLLC - Service Interest</li>
-            <li>Custom field: CVLLC - Referral Source</li>
-            <li>Custom field: CVLLC - Source Page = <code>/index.html</code></li>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav__list">
+            <li><a href="/" class="mobile-nav__link">Home</a></li>
+            <li><a href="/about.html" class="mobile-nav__link">About</a></li>
+            <li><a href="/contact.html" class="mobile-nav__link">Contact</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <!-- Form Submission Script -->
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', async function(e) {
-            e.preventDefault();
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <span class="hero__eyebrow">AI Automation & Consulting</span>
+                <h1 class="hero__title">Practical AI for growth-minded businesses</h1>
+                <p class="hero__subtitle">Stop letting qualified leads fall through the cracks. We help established B2B companies maximize the opportunities they already have — using AI that works with your team, not against them.</p>
+                <a href="/contact.html" class="btn btn--primary btn--large">Let's Talk</a>
+            </div>
+        </div>
+    </section>
 
-            const btn = document.getElementById('submit-btn');
-            const errorDiv = document.getElementById('form-error');
-            errorDiv.style.display = 'none';
+    <!-- Who We Help -->
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2>Built for businesses with momentum</h2>
+            </div>
+            <div class="container--narrow">
+                <p style="font-size: 1.125rem; color: var(--gray-700);">Here's the thing: we're not for everyone.</p>
+                <p style="color: var(--gray-700);">Creating Value LLC works with established B2B companies — restaurant supply, heavy equipment, industrial services, and similar industries — that are already generating leads and revenue.</p>
+                <p style="color: var(--gray-700);">If you're in survival mode or need to "generate more leads," we're probably not the right fit. But if you've got leads coming in and want to stop leaving money on the table? That's exactly what we do.</p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature__icon">✓</div>
+                        <p class="feature__text"><strong>Filter the tire kickers from the real buyers</strong> — so your team focuses on opportunities that close</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature__icon">✓</div>
+                        <p class="feature__text"><strong>Know which leads deserve attention first</strong> — AI-powered scoring that actually makes sense</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature__icon">✓</div>
+                        <p class="feature__text"><strong>Get more from your existing lead flow</strong> — without adding headcount or complexity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            // Get form values
-            const firstName = document.getElementById('first_name').value.trim();
-            const lastName = document.getElementById('last_name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const phone = document.getElementById('phone').value.trim();
-            const problemToSolve = document.getElementById('problem_to_solve').value.trim();
-            const referralSource = document.getElementById('referral_source').value.trim();
+    <!-- What We Do -->
+    <section class="section section--gray">
+        <div class="container">
+            <div class="section__header">
+                <h2>Practical AI. Real results.</h2>
+                <p>We implement AI automation that makes your existing team more effective. No buzzwords. No science projects. Just systems that work.</p>
+            </div>
             
-            // Get all checked Service Interest values (multi-select)
-            const serviceInterestCheckboxes = document.querySelectorAll('input[name="service_interest"]:checked');
-            const serviceInterestValues = Array.from(serviceInterestCheckboxes).map(cb => cb.value);
-            const serviceInterest = serviceInterestValues.join(', ');
+            <div class="cards">
+                <div class="card">
+                    <div class="card__icon">⚙️</div>
+                    <h3 class="card__title">Process Automation</h3>
+                    <p class="card__text">Transform your business from owner-dependent to system-driven. We map your workflows, identify friction points, and build AI-powered automation that handles the repetitive work — so your team can focus on what actually moves the needle.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card__icon">📊</div>
+                    <h3 class="card__title">Research & Intelligence</h3>
+                    <p class="card__text">Get CEO-level insights without the CEO-level time investment. We deliver competitive intelligence, market analysis, and strategic research using AI — 10x faster than traditional methods, with human expertise to make sense of it all.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card__icon">🎯</div>
+                    <h3 class="card__title">Sales Enablement</h3>
+                    <p class="card__text">Know which leads deserve attention first. We build scoring systems and automation that help your sales team spend time on the right opportunities — not chasing every inquiry equally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            // Validate required fields
-            if (!firstName || !email) {
-                errorDiv.textContent = 'Please fill in all required fields.';
-                errorDiv.style.display = 'block';
-                return;
-            }
+    <!-- Why Work With Us -->
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2>Real experience. Not just theory.</h2>
+            </div>
+            <div class="container--narrow">
+                <p style="font-size: 1.125rem; color: var(--gray-700);">I'm not someone who read about AI implementation in a book. I serve as Fractional CTO for an established multi-location B2B company, implementing AI automation with human staff and existing customers every day.</p>
+                <p style="color: var(--gray-700);">That means I know what actually works when you're dealing with real employees, real customers, and real business constraints — not just what looks good in a demo.</p>
+                
+                <div class="features" style="margin-top: var(--space-xl);">
+                    <div class="feature">
+                        <div class="feature__icon">✓</div>
+                        <p class="feature__text"><strong>Boutique approach</strong> — We only take projects that fit. No cookie-cutter solutions.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature__icon">✓</div>
+                        <p class="feature__text"><strong>Humans in the loop</strong> — AI handles the repetitive work. Your team stays in control.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature__icon">✓</div>
+                        <p class="feature__text"><strong>Progress over perfection</strong> — We start small, prove the concept, then scale what works.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            btn.disabled = true;
-            btn.textContent = 'Submitting...';
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to get more from what you've already built?</h2>
+            <p>Let's have a conversation. No pitch deck. No pressure. Just a 20-minute call to see if there's a fit.</p>
+            <a href="/contact.html" class="btn btn--primary btn--large">Book a Discovery Call</a>
+        </div>
+    </section>
 
-            // Build payload with CVLLC custom field IDs
-            const formData = {
-                first_name: firstName,
-                last_name: lastName,
-                email: email,
-                phone: phone,
-                source: 'CreatingValue Website - Contact Form',
-                tags: ['CVLLC-Website-Lead', 'CVLLC-Contact'],
-                customFields: [
-                    // CVLLC - Problem to Solve
-                    { id: 'kWx58y9s3hO3XElQnjlr', field_value: problemToSolve },
-                    // CVLLC - Service Interest
-                    { id: '8w6Mp0B593OCErOkJijr', field_value: serviceInterest },
-                    // CVLLC - Referral Source
-                    { id: 'A5FS2khTVkFLogT0uhpD', field_value: referralSource },
-                    // CVLLC - Source Page (hidden, auto-populated)
-                    { id: 'qyjfcJ8GAxnHGLAFsu4u', field_value: window.location.pathname }
-                ]
-            };
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="/images/CV_logotype_white.png" alt="Creating Value">
+                    <p>AI automation and consulting for growth-minded B2B businesses. Based in Memphis, serving clients nationwide.</p>
+                </div>
+                
+                <div class="footer__nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__nav">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/scottfinney/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://www.youtube.com/@CreatingValueLLCMemphis" target="_blank" rel="noopener">YouTube</a></li>
+                        <li><a href="https://x.com/createvaluenow" target="_blank" rel="noopener">X / Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2026 Creating Value LLC. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="/terms.html">Terms & Conditions</a>
+                    <a href="/privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-            try {
-                const response = await fetch('/api/submit', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(formData)
-                });
-
-                const result = await response.json();
-
-                if (result.success) {
-                    document.getElementById('contact-form').style.display = 'none';
-                    document.getElementById('success-message').style.display = 'block';
-
-                    // Track conversion in Clicky (check if loaded)
-                    if (typeof clicky !== 'undefined') {
-                        clicky.goal('cvllc_contact_form');
-                    }
-
-                    console.log('Form submitted successfully:', result);
-                } else {
-                    throw new Error(result.error || 'Submission failed');
-                }
-            } catch (error) {
-                console.error('Submission error:', error);
-                errorDiv.textContent = 'Something went wrong. Please try again.';
-                errorDiv.style.display = 'block';
-                btn.disabled = false;
-                btn.textContent = 'Submit';
+    <!-- Mobile Menu Script -->
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        
+        menuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+        
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                header.classList.add('header--scrolled');
+            } else {
+                header.classList.remove('header--scrolled');
             }
         });
     </script>
