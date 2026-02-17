@@ -4,7 +4,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://creatingvaluellc.com/sitemap.xml
+Sitemap: https://www.creatingvaluellc.com/sitemap.xml
 
 # AI Crawlers - Welcome
 User-agent: GPTBot
