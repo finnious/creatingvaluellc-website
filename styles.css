@@ -692,8 +692,30 @@ a:hover {
 }
 
 .footer__brand img {
-    height: 36px;
-    margin-bottom: var(--space-sm);
+    height: 48px;
+    margin-bottom: var(--space-md);
+}
+
+.footer__logo {
+    height: 48px;
+    width: auto;
+}
+
+.footer__logo-group {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.footer__mark {
+    height: 52px;
+    width: auto;
+}
+
+.footer__logotype {
+    height: 28px;
+    width: auto;
 }
 
 .footer__brand p {

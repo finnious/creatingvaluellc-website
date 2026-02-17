@@ -167,8 +167,12 @@
                     <h2>Or book a call directly</h2>
                     <p style="color: var(--gray-600); margin-bottom: var(--space-md);">Skip the back-and-forth. Grab 20 minutes on my calendar and let's figure out if there's a fit.</p>
                     
-                    <div class="tidycal-container">
-                        <div class="tidycal-embed" data-path="creatingvalue/20-minute-discovery-call-general"></div>
+                    <div class="tidycal-container" id="tidycal-container">
+                        <div id="tidycal-placeholder" style="text-align: center; padding: 2rem;">
+                            <p style="margin-bottom: 1rem; color: var(--gray-600);">Loading calendar...</p>
+                            <button onclick="loadTidyCal()" class="btn btn--secondary" style="font-size: 0.9rem;">Click to load calendar</button>
+                        </div>
+                        <div class="tidycal-embed" data-path="creatingvalue/20-minute-discovery-call-general" id="tidycal-widget" style="display: none;"></div>
                     </div>
                 </div>
             </div>
@@ -198,7 +202,10 @@
         <div class="container">
             <div class="footer__grid">
                 <div class="footer__brand">
-                    <img src="/images/CV_logotype_white.png" alt="Creating Value">
+                    <div class="footer__logo-group">
+                        <img src="/images/CVMARK_white.png" alt="" class="footer__mark">
+                        <img src="/images/CV_logotype_white.png" alt="Creating Value" class="footer__logotype">
+                    </div>
                     <p>AI automation and consulting for growth-minded B2B businesses. Based in Memphis, serving clients nationwide.</p>
                 </div>
                 
@@ -382,14 +389,38 @@
         });
     </script>
 
-    <!-- TidyCal (deferred) -->
+    <!-- TidyCal (lazy-loaded for performance) -->
     <script>
-        window.addEventListener('load', function() {
+        var tidyCalLoaded = false;
+        
+        function loadTidyCal() {
+            if (tidyCalLoaded) return;
+            tidyCalLoaded = true;
+            
+            document.getElementById('tidycal-placeholder').style.display = 'none';
+            document.getElementById('tidycal-widget').style.display = 'block';
+            
             var s = document.createElement('script');
             s.src = 'https://asset-tidycal.b-cdn.net/js/embed.js';
             s.async = true;
             document.body.appendChild(s);
-        });
+        }
+        
+        // Load TidyCal when user scrolls near it (IntersectionObserver)
+        if ('IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function(entries) {
+                if (entries[0].isIntersecting) {
+                    loadTidyCal();
+                    observer.disconnect();
+                }
+            }, { rootMargin: '200px' });
+            
+            var container = document.getElementById('tidycal-container');
+            if (container) observer.observe(container);
+        } else {
+            // Fallback: load after 5 seconds for older browsers
+            setTimeout(loadTidyCal, 5000);
+        }
     </script>
 
     <!-- Google Analytics GA4 (zero perf impact) -->
