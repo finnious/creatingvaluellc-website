@@ -788,6 +788,12 @@ a:hover {
     color: var(--gray-300);
 }
 
+.footer__updated {
+    color: var(--gray-600);
+    font-size: 0.8rem;
+    margin-left: var(--space-sm);
+}
+
 /* Legal Pages */
 .legal-page {
     padding: calc(72px + var(--space-2xl)) 0 var(--space-2xl);
