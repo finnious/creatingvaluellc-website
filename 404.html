@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Creating Value LLC</title>
+    <meta name="robots" content="noindex">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/CVMARK_black.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/styles.css">
+    
+    <style>
+        .error-page {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--space-xl) var(--space-md);
+        }
+        .error-page__content {
+            max-width: 500px;
+        }
+        .error-page__code {
+            font-size: 6rem;
+            font-weight: 700;
+            color: var(--teal);
+            line-height: 1;
+            margin-bottom: var(--space-md);
+        }
+        .error-page__title {
+            font-size: 1.5rem;
+            margin-bottom: var(--space-md);
+        }
+        .error-page__text {
+            color: var(--gray-600);
+            margin-bottom: var(--space-lg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="header__logo">
+                    <img src="/images/CV_logotype_black.png" alt="Creating Value LLC">
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="/" class="nav__link">Home</a></li>
+                        <li><a href="/about" class="nav__link">About</a></li>
+                        <li><a href="/contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav__list">
+            <li><a href="/" class="mobile-nav__link">Home</a></li>
+            <li><a href="/about" class="mobile-nav__link">About</a></li>
+            <li><a href="/contact" class="mobile-nav__link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Error Content -->
+    <section class="error-page">
+        <div class="error-page__content">
+            <div class="error-page__code">404</div>
+            <h1 class="error-page__title">Page not found</h1>
+            <p class="error-page__text">The page you're looking for doesn't exist or has been moved. Let's get you back on track.</p>
+            <a href="/" class="btn btn--primary">Back to Home</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo-group">
+                        <img src="/images/CVMARK_white.png" alt="" class="footer__mark">
+                        <img src="/images/CV_logotype_white.png" alt="Creating Value" class="footer__logotype">
+                    </div>
+                    <p>AI automation and consulting for growth-minded B2B businesses. Based in Memphis, serving clients nationwide.</p>
+                    <p class="footer__contact">🌎 Memphis, TN USA</p>
+                    <p class="footer__contact">📞 <a href="tel:+19018785916">(901) 878-5916</a></p>
+                </div>
+                
+                <div class="footer__nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__nav">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/scottfinney/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://www.youtube.com/@CreatingValueLLCMemphis" target="_blank" rel="noopener">YouTube</a></li>
+                        <li><a href="https://x.com/createvaluenow" target="_blank" rel="noopener">X / Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2026 Creating Value LLC. All rights reserved. <span class="footer__updated">Last updated: February 2026</span></p>
+                <div class="footer__legal">
+                    <a href="/terms">Terms & Conditions</a>
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/llms.txt">llms.txt</a>
+                    <a href="/sitemap.xml">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        
+        menuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+    </script>
+</body>
+</html>
