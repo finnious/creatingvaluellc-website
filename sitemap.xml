@@ -7,25 +7,31 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.creatingvaluellc.com/about.html</loc>
+    <loc>https://www.creatingvaluellc.com/about</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.creatingvaluellc.com/contact.html</loc>
+    <loc>https://www.creatingvaluellc.com/contact</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.creatingvaluellc.com/terms.html</loc>
+    <loc>https://www.creatingvaluellc.com/ai-speaker-memphis</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.creatingvaluellc.com/terms</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.creatingvaluellc.com/privacy.html</loc>
+    <loc>https://www.creatingvaluellc.com/privacy</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
