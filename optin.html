@@ -111,37 +111,38 @@
                     
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="email">Email <span class="required">*</span></label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
                             <label for="phone">Phone <span class="required">*</span></label>
                             <input type="tel" id="phone" name="phone" required>
                         </div>
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
                     </div>
 
-                    <!-- SMS Consent Opt-Ins -->
+                    <!-- Non-Marketing SMS Consent — CANNOT be required per A2P compliance -->
                     <div class="form-group consent-group">
                         <label class="consent-label">
                             <input type="checkbox" id="consent_nonmarketing" name="terms_and_conditions" value="non_marketing_consent">
-                            <span class="consent-text">By checking this box, I consent to receive non-marketing text messages from <a href="https://www.creatingvaluellc.com" target="_blank" rel="noopener noreferrer">CreatingValueLLC.com</a> about appointment confirmations, project updates, and scheduling reminders. Message frequency varies, message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out.</span>
+                            <span class="consent-text">I consent to receive transactional messages from <a href="https://www.creatingvaluellc.com" target="_blank" rel="noopener noreferrer">Creating Value LLC</a> at the phone number provided. Message frequency may vary. Message &amp; data rates may apply. Reply HELP for help or STOP to opt-out.</span>
                         </label>
                     </div>
 
+                    <!-- Marketing SMS Consent — CANNOT be required per A2P compliance -->
                     <div class="form-group consent-group">
                         <label class="consent-label">
                             <input type="checkbox" id="consent_marketing" name="terms_and_conditions" value="marketing_consent">
-                            <span class="consent-text">By checking this box, I consent to receive marketing and promotional messages including AI automation tips, business insights, event announcements, and new service updates from <a href="https://www.creatingvaluellc.com" target="_blank" rel="noopener noreferrer">CreatingValueLLC.com</a> at the phone number provided. Frequency may vary. Message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out.</span>
+                            <span class="consent-text">I consent to receive marketing and promotional messages from <a href="https://www.creatingvaluellc.com" target="_blank" rel="noopener noreferrer">Creating Value LLC</a> at the phone number provided. Message frequency may vary. Message &amp; data rates may apply. Reply HELP for help or STOP to opt-out.</span>
                         </label>
-                    </div>
-
-                    <div class="consent-links">
-                        <a href="/privacy" target="_blank">Privacy Policy</a> | <a href="/terms" target="_blank">Terms of Service</a>
                     </div>
                     
                     <div id="form-error" class="form-error" style="display: none;"></div>
                     
-                    <button type="submit" id="submit-btn" class="btn btn--primary" style="width: 100%;">Subscribe to Text Messages</button>
+                    <button type="submit" id="submit-btn" class="btn btn--primary" style="width: 100%;">Submit</button>
+
+                    <div class="consent-links">
+                        <a href="/privacy" target="_blank">Privacy Policy</a> | <a href="/terms" target="_blank">Terms of Service</a>
+                    </div>
                 </form>
                 
                 <div id="form-success" class="form-success" style="display: none;">
@@ -235,21 +236,16 @@
             const consentNonMarketing = document.getElementById('consent_nonmarketing').checked;
             const consentMarketing = document.getElementById('consent_marketing').checked;
 
-            // Require name, email, phone, and at least one consent checkbox
+            // Only require name, email, phone
+            // Checkboxes are NEVER required — cannot block form submission per A2P compliance
             if (!firstName || !email || !phone) {
                 errorDiv.textContent = 'Please fill in all required fields.';
                 errorDiv.style.display = 'block';
                 return;
             }
 
-            if (!consentNonMarketing && !consentMarketing) {
-                errorDiv.textContent = 'Please select at least one message type to subscribe.';
-                errorDiv.style.display = 'block';
-                return;
-            }
-
             btn.disabled = true;
-            btn.textContent = 'Subscribing...';
+            btn.textContent = 'Submitting...';
 
             // Build tags dynamically based on consent
             const tags = ['CVLLC-Website-Lead', 'CVLLC-SMS-Optin'];
@@ -291,7 +287,7 @@
                 errorDiv.textContent = 'Something went wrong. Please try again.';
                 errorDiv.style.display = 'block';
                 btn.disabled = false;
-                btn.textContent = 'Subscribe to Text Messages';
+                btn.textContent = 'Submit';
             }
         });
     </script>
