@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.creatingvaluellc.com/optin">
+    <title>SMS Opt-In | Creating Value LLC</title>
+    <meta name="description" content="Sign up to receive text messages from Creating Value LLC — appointment confirmations, project updates, AI automation tips, and event announcements.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="SMS Opt-In | Creating Value LLC">
+    <meta property="og:description" content="Sign up to receive text messages from Creating Value LLC.">
+    <meta property="og:image" content="https://www.creatingvaluellc.com/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://www.creatingvaluellc.com/optin">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@createvaluenow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/CVMARK_black.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/styles.css">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.creatingvaluellc.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "SMS Opt-In",
+                "item": "https://www.creatingvaluellc.com/optin"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="header__logo">
+                    <img src="/images/CV_logotype_black.png" alt="Creating Value LLC">
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="/" class="nav__link">Home</a></li>
+                        <li><a href="/about" class="nav__link">About</a></li>
+                        <li><a href="/contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav__list">
+            <li><a href="/" class="mobile-nav__link">Home</a></li>
+            <li><a href="/about" class="mobile-nav__link">About</a></li>
+            <li><a href="/contact" class="mobile-nav__link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Opt-In Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Stay connected via text</h1>
+            <p>Get appointment confirmations, project updates, AI automation tips, and event announcements delivered straight to your phone.</p>
+        </div>
+    </section>
+
+    <!-- Opt-In Form -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container container--narrow">
+            <div class="contact-form-section">
+                <h2>Sign up for text messages</h2>
+                
+                <form id="optin-form" class="form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first_name">First Name <span class="required">*</span></label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <!-- SMS Consent Opt-Ins -->
+                    <div class="form-group consent-group">
+                        <label class="consent-label">
+                            <input type="checkbox" id="consent_nonmarketing" name="terms_and_conditions" value="non_marketing_consent">
+                            <span class="consent-text">By checking this box, I consent to receive non-marketing text messages from <a href="https://www.creatingvaluellc.com" target="_blank" rel="noopener noreferrer">CreatingValueLLC.com</a> about appointment confirmations, project updates, and scheduling reminders. Message frequency varies, message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out.</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group consent-group">
+                        <label class="consent-label">
+                            <input type="checkbox" id="consent_marketing" name="terms_and_conditions" value="marketing_consent">
+                            <span class="consent-text">By checking this box, I consent to receive marketing and promotional messages including AI automation tips, business insights, event announcements, and new service updates from <a href="https://www.creatingvaluellc.com" target="_blank" rel="noopener noreferrer">CreatingValueLLC.com</a> at the phone number provided. Frequency may vary. Message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out.</span>
+                        </label>
+                    </div>
+
+                    <div class="consent-links">
+                        <a href="/privacy" target="_blank">Privacy Policy</a> | <a href="/terms" target="_blank">Terms of Service</a>
+                    </div>
+                    
+                    <div id="form-error" class="form-error" style="display: none;"></div>
+                    
+                    <button type="submit" id="submit-btn" class="btn btn--primary" style="width: 100%;">Subscribe to Text Messages</button>
+                </form>
+                
+                <div id="form-success" class="form-success" style="display: none;">
+                    <h3>You're signed up!</h3>
+                    <p>You'll start receiving text messages from Creating Value LLC. Reply STOP at any time to opt out.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo-group">
+                        <img src="/images/CVMARK_white.png" alt="" class="footer__mark">
+                        <img src="/images/CV_logotype_white.png" alt="Creating Value" class="footer__logotype">
+                    </div>
+                    <p>AI automation and consulting for growth-minded B2B businesses. Based in Memphis, serving clients nationwide.</p>
+                    <p class="footer__contact">🌎 Memphis, TN USA</p>
+                    <p class="footer__contact">📞 <a href="tel:+19018785916">(901) 878-5916</a></p>
+                </div>
+                
+                <div class="footer__nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__nav">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/scottfinney/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://www.youtube.com/@CreatingValueLLCMemphis" target="_blank" rel="noopener">YouTube</a></li>
+                        <li><a href="https://x.com/createvaluenow" target="_blank" rel="noopener">X / Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2026 Creating Value LLC. All rights reserved. <span class="footer__updated">Last updated: February 2026</span></p>
+                <div class="footer__legal">
+                    <a href="/terms">Terms & Conditions</a>
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/llms.txt">llms.txt</a>
+                    <a href="/sitemap.xml">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        
+        menuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+        
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                header.classList.add('header--scrolled');
+            } else {
+                header.classList.remove('header--scrolled');
+            }
+        });
+    </script>
+
+    <!-- Opt-In Form Script -->
+    <script>
+        document.getElementById('optin-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const btn = document.getElementById('submit-btn');
+            const errorDiv = document.getElementById('form-error');
+            errorDiv.style.display = 'none';
+
+            const firstName = document.getElementById('first_name').value.trim();
+            const lastName = document.getElementById('last_name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+
+            const consentNonMarketing = document.getElementById('consent_nonmarketing').checked;
+            const consentMarketing = document.getElementById('consent_marketing').checked;
+
+            // Require name, email, phone, and at least one consent checkbox
+            if (!firstName || !email || !phone) {
+                errorDiv.textContent = 'Please fill in all required fields.';
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            if (!consentNonMarketing && !consentMarketing) {
+                errorDiv.textContent = 'Please select at least one message type to subscribe.';
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            btn.disabled = true;
+            btn.textContent = 'Subscribing...';
+
+            // Build tags dynamically based on consent
+            const tags = ['CVLLC-Website-Lead', 'CVLLC-SMS-Optin'];
+            if (consentNonMarketing) tags.push('CVLLC-SMS-NonMarketing');
+            if (consentMarketing) tags.push('CVLLC-SMS-Marketing');
+
+            const formData = {
+                first_name: firstName,
+                last_name: lastName,
+                email: email,
+                phone: phone,
+                source: 'CreatingValue Website - SMS Opt-In',
+                tags: tags,
+                customFields: [
+                    { id: 'qyjfcJ8GAxnHGLAFsu4u', field_value: window.location.pathname }
+                ]
+            };
+
+            try {
+                const response = await fetch('/api/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    document.getElementById('optin-form').style.display = 'none';
+                    document.getElementById('form-success').style.display = 'block';
+
+                    if (typeof clicky !== 'undefined') {
+                        clicky.goal('cvllc_sms_optin');
+                    }
+                } else {
+                    throw new Error(result.error || 'Submission failed');
+                }
+            } catch (error) {
+                errorDiv.textContent = 'Something went wrong. Please try again.';
+                errorDiv.style.display = 'block';
+                btn.disabled = false;
+                btn.textContent = 'Subscribe to Text Messages';
+            }
+        });
+    </script>
+
+    <!-- Google Analytics GA4 (zero perf impact) -->
+    <script>
+        function _ga4(){
+            var m='G-9Y9MRT5LPJ',c=localStorage.getItem('_ga_cid');
+            if(!c){c=Math.random().toString(36).substr(2)+Date.now().toString(36);localStorage.setItem('_ga_cid',c);}
+            navigator.sendBeacon('https://www.google-analytics.com/g/collect?v=2&tid='+m+'&cid='+c+'&sid='+Date.now()+'&dl='+encodeURIComponent(location.href)+'&dt='+encodeURIComponent(document.title)+'&dr='+encodeURIComponent(document.referrer)+'&en=page_view');
+        }
+        if('requestIdleCallback' in window){requestIdleCallback(function(){setTimeout(_ga4,3000)});}
+        else{window.addEventListener('load',function(){setTimeout(_ga4,5000)});}
+    </script>
+
+    <!-- Clicky Analytics (deferred) -->
+    <script>
+        window.addEventListener('load', function() {
+            var s = document.createElement('script');
+            s.src = '//static.getclicky.com/101462603.js';
+            s.async = true;
+            document.body.appendChild(s);
+        });
+    </script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101462603ns.gif" /></p></noscript>
+</body>
+</html>
