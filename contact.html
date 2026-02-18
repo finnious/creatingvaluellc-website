@@ -153,6 +153,25 @@
                             <label for="referral_source">How did you hear about us?</label>
                             <textarea id="referral_source" name="referral_source" placeholder="Referral, event, LinkedIn, etc." style="min-height: 80px;"></textarea>
                         </div>
+
+                        <!-- SMS Consent Opt-Ins -->
+                        <div class="form-group consent-group">
+                            <label class="consent-label">
+                                <input type="checkbox" id="consent_nonmarketing" name="terms_and_conditions" value="non_marketing_consent">
+                                <span class="consent-text">By checking this box, I consent to receive non-marketing text messages from <a href="https://www.creatingvaluellc.com" target="_blank" rel="noopener noreferrer">CreatingValueLLC.com</a> about appointment confirmations, project updates, and scheduling reminders. Message frequency varies, message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out.</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group consent-group">
+                            <label class="consent-label">
+                                <input type="checkbox" id="consent_marketing" name="terms_and_conditions" value="marketing_consent">
+                                <span class="consent-text">By checking this box, I consent to receive marketing and promotional messages including AI automation tips, business insights, event announcements, and new service updates from <a href="https://www.creatingvaluellc.com" target="_blank" rel="noopener noreferrer">CreatingValueLLC.com</a> at the phone number provided. Frequency may vary. Message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out.</span>
+                            </label>
+                        </div>
+
+                        <div class="consent-links">
+                            <a href="/privacy" target="_blank">Privacy Policy</a> | <a href="/terms" target="_blank">Terms of Service</a>
+                        </div>
                         
                         <div id="form-error" class="form-error" style="display: none;"></div>
                         
@@ -286,6 +305,10 @@
             const serviceInterestValues = Array.from(serviceInterestCheckboxes).map(cb => cb.value);
             const serviceInterest = serviceInterestValues.join(', ');
 
+            // SMS consent opt-ins
+            const consentNonMarketing = document.getElementById('consent_nonmarketing').checked;
+            const consentMarketing = document.getElementById('consent_marketing').checked;
+
             if (!firstName || !email) {
                 errorDiv.textContent = 'Please fill in all required fields.';
                 errorDiv.style.display = 'block';
@@ -295,13 +318,18 @@
             btn.disabled = true;
             btn.textContent = 'Sending...';
 
+            // Build tags dynamically based on consent
+            const tags = ['CVLLC-Website-Lead', 'CVLLC-Contact'];
+            if (consentNonMarketing) tags.push('CVLLC-SMS-NonMarketing');
+            if (consentMarketing) tags.push('CVLLC-SMS-Marketing');
+
             const formData = {
                 first_name: firstName,
                 last_name: lastName,
                 email: email,
                 phone: phone,
                 source: 'CreatingValue Website - Contact Form',
-                tags: ['CVLLC-Website-Lead', 'CVLLC-Contact'],
+                tags: tags,
                 customFields: [
                     { id: 'kWx58y9s3hO3XElQnjlr', field_value: problemToSolve },
                     { id: '8w6Mp0B593OCErOkJijr', field_value: serviceInterest },
