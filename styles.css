@@ -794,6 +794,14 @@ a:hover {
     margin-left: var(--space-sm);
 }
 
+/* Freshness Timestamp (above footer) */
+.freshness {
+    font-size: 0.8rem;
+    color: var(--gray-300);
+    text-align: center;
+    padding: 8px 0;
+}
+
 .footer__contact {
     margin-bottom: 0.25rem;
     font-size: 0.95rem;
