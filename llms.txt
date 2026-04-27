@@ -8,11 +8,16 @@ Primary Positioning: Boutique AI consulting for B2B companies with existing mome
 Founder: Scott Finney — Fractional CTO with hands-on daily experience implementing AI automation in a multi-location B2B company.
 
 Key Content Areas:
-- / — Company overview, positioning, services summary
+- / — Company overview, positioning, services summary, FAQ
 - /about — Scott Finney bio, background, approach
 - /contact — Contact form, discovery call booking
 - /ai-speaker-memphis — AI speaking engagements, workshops, corporate training
+- /build-with-me — Recruiting builders for the AI Colony (agent orchestration team)
 - /bicycle-accident-2019 — Scott's 2019 cycling accident recovery story (personal)
+
+Related Brands (same founder, separate websites):
+- WeAddBots (weaddbots.com) — Weekly AI meetup for Memphis businesses, AI automation content and community. This is the lead generation and AI content brand.
+- Drop The Strap Marketing (dropthestrap.com) — SEO and AI search optimization services (AEO/GEO).
 
 Services (outcome-based):
 - Process Automation — Transform owner-dependent businesses to system-driven operations

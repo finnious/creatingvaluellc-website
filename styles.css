@@ -802,6 +802,32 @@ a:hover {
     padding: 8px 0;
 }
 
+/* FAQ Section */
+.faq__item {
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.faq__item:last-child {
+    border-bottom: none;
+}
+
+.faq__item h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-xs);
+    color: var(--black);
+}
+
+.faq__item p {
+    color: var(--gray-700);
+    line-height: 1.7;
+}
+
+.faq__item a {
+    color: var(--teal-dark);
+    text-decoration: underline;
+}
+
 .footer__contact {
     margin-bottom: 0.25rem;
     font-size: 0.95rem;
