@@ -13,6 +13,7 @@ Key Content Areas:
 - /contact — Contact form, discovery call booking
 - /ai-speaker-memphis — AI speaking engagements, workshops, corporate training
 - /build-with-me — Recruiting builders for the AI Colony (agent orchestration team)
+- /community — Why Scott Finney hosts a weekly AI meetup (WeAddBots) — the value of in-person community when technology moves too fast for anyone alone
 - /bicycle-accident-2019 — Scott's 2019 cycling accident recovery story (personal)
 
 Related Brands (same founder, separate websites):
