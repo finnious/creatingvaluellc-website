@@ -30,85 +30,93 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://www.creatingvaluellc.com/about#scott-finney",
-        "name": "Scott Finney",
-        "jobTitle": "AI Speaker & Consultant",
-        "description": "Memphis-based AI speaker and Fractional CTO with 10+ years of software engineering experience. Hosts a weekly AI meetup, 5-year AI Bot Summit attendee, and delivers practical AI implementation talks for business audiences.",
-        "url": "https://www.creatingvaluellc.com/ai-speaker-memphis",
-        "image": "https://www.creatingvaluellc.com/images/scott-finney.jpg",
-        "worksFor": {
-            "@type": "Organization",
-            "name": "Creating Value LLC",
-            "@id": "https://www.creatingvaluellc.com/#organization"
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Memphis",
-            "addressRegion": "TN",
-            "addressCountry": "US"
-        },
-        "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "Auburn University",
-            "department": "Management Information Systems"
-        },
-        "knowsAbout": ["Artificial Intelligence", "AI Automation", "Business Process Automation", "AI Strategy", "Lead Scoring", "B2B Sales Enablement", "AI Speaking", "Corporate AI Training"],
-        "memberOf": [
+        "@graph": [
             {
-                "@type": "Organization",
-                "name": "Greater Memphis Chamber"
+                "@type": "WebPage",
+                "@id": "https://www.creatingvaluellc.com/ai-speaker-memphis",
+                "url": "https://www.creatingvaluellc.com/ai-speaker-memphis",
+                "name": "AI Speaker Memphis - Scott Finney",
+                "isPartOf": {
+                    "@id": "https://www.creatingvaluellc.com/#website"
+                },
+                "mainEntity": {
+                    "@id": "https://www.creatingvaluellc.com/about#scott-finney"
+                },
+                "breadcrumb": {
+                    "@id": "https://www.creatingvaluellc.com/ai-speaker-memphis#breadcrumb"
+                },
+                "lastReviewed": "2026-05-12"
             },
             {
-                "@type": "Organization",
-                "name": "Page Robbins Adult Day Center",
-                "description": "Board Member"
-            }
-        ],
-        "affiliation": {
-            "@type": "Organization",
-            "name": "WeAddBots",
-            "url": "https://www.weaddbots.com",
-            "description": "Weekly AI meetup for Memphis businesses, founded by Scott Finney"
-        },
-        "hasOccupation": {
-            "@type": "Occupation",
-            "name": "AI Speaker & Consultant",
-            "experienceRequirements": "10+ years software engineering"
-        },
-        "sameAs": [
-            "https://www.linkedin.com/in/scottfinney/",
-            "https://x.com/createvaluenow",
-            "https://github.com/finnious",
-            "https://www.imdb.com/name/nm16016079/",
-            "https://www.weaddbots.com/about"
-        ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "AI Speaker Memphis - Scott Finney",
-        "lastReviewed": "2026-05-12"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.creatingvaluellc.com"
+                "@type": "BreadcrumbList",
+                "@id": "https://www.creatingvaluellc.com/ai-speaker-memphis#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.creatingvaluellc.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "AI Speaker Memphis",
+                        "item": "https://www.creatingvaluellc.com/ai-speaker-memphis"
+                    }
+                ]
             },
             {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "AI Speaker Memphis",
-                "item": "https://www.creatingvaluellc.com/ai-speaker-memphis"
+                "@type": "Person",
+                "@id": "https://www.creatingvaluellc.com/about#scott-finney",
+                "name": "Scott Finney",
+                "jobTitle": "AI Speaker & Consultant",
+                "description": "Memphis-based AI speaker and Fractional CTO with 10+ years of software engineering experience. Hosts a weekly AI meetup, 5-year AI Bot Summit attendee, and delivers practical AI implementation talks for business audiences.",
+                "url": "https://www.creatingvaluellc.com/about",
+                "image": "https://www.creatingvaluellc.com/images/scott-finney.jpg",
+                "worksFor": {
+                    "@id": "https://www.creatingvaluellc.com/#organization"
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Memphis",
+                    "addressRegion": "TN",
+                    "addressCountry": "US"
+                },
+                "alumniOf": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Auburn University",
+                    "department": "Management Information Systems"
+                },
+                "knowsAbout": ["Artificial Intelligence", "AI Automation", "Business Process Automation", "AI Strategy", "Lead Scoring", "B2B Sales Enablement", "AI Speaking", "Corporate AI Training"],
+                "memberOf": [
+                    {
+                        "@type": "Organization",
+                        "name": "Greater Memphis Chamber"
+                    },
+                    {
+                        "@type": "Organization",
+                        "name": "Page Robbins Adult Day Center",
+                        "description": "Board Member"
+                    }
+                ],
+                "affiliation": {
+                    "@type": "Organization",
+                    "name": "WeAddBots",
+                    "url": "https://www.weaddbots.com",
+                    "description": "Weekly AI meetup for Memphis businesses, founded by Scott Finney"
+                },
+                "hasOccupation": {
+                    "@type": "Occupation",
+                    "name": "AI Speaker & Consultant",
+                    "experienceRequirements": "10+ years software engineering"
+                },
+                "sameAs": [
+                    "https://www.linkedin.com/in/scottfinney/",
+                    "https://x.com/createvaluenow",
+                    "https://github.com/finnious",
+                    "https://www.imdb.com/name/nm16016079/",
+                    "https://www.weaddbots.com/about"
+                ]
             }
         ]
     }

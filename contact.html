@@ -30,32 +30,41 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ContactPage",
-        "name": "Contact Creating Value LLC",
-        "description": "Get in touch with Creating Value LLC. Send a message or book a 20-minute discovery call to discuss your AI automation needs.",
-        "mainEntity": {
-            "@type": "Organization",
-            "@id": "https://www.creatingvaluellc.com/#organization"
-        },
-        "lastReviewed": "2026-05-12"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
+        "@graph": [
             {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.creatingvaluellc.com"
+                "@type": "ContactPage",
+                "@id": "https://www.creatingvaluellc.com/contact",
+                "url": "https://www.creatingvaluellc.com/contact",
+                "name": "Contact Creating Value LLC",
+                "description": "Get in touch with Creating Value LLC. Send a message or book a 20-minute discovery call to discuss your AI automation needs.",
+                "isPartOf": {
+                    "@id": "https://www.creatingvaluellc.com/#website"
+                },
+                "about": {
+                    "@id": "https://www.creatingvaluellc.com/#organization"
+                },
+                "breadcrumb": {
+                    "@id": "https://www.creatingvaluellc.com/contact#breadcrumb"
+                },
+                "lastReviewed": "2026-05-12"
             },
             {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Contact",
-                "item": "https://www.creatingvaluellc.com/contact"
+                "@type": "BreadcrumbList",
+                "@id": "https://www.creatingvaluellc.com/contact#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.creatingvaluellc.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Contact",
+                        "item": "https://www.creatingvaluellc.com/contact"
+                    }
+                ]
             }
         ]
     }

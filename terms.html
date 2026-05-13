@@ -30,28 +30,38 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Terms & Conditions - Creating Value LLC",
-        "description": "Terms and Conditions for Creating Value LLC website and services.",
-        "lastReviewed": "2026-05-12"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
+        "@graph": [
             {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.creatingvaluellc.com"
+                "@type": "WebPage",
+                "@id": "https://www.creatingvaluellc.com/terms",
+                "url": "https://www.creatingvaluellc.com/terms",
+                "name": "Terms & Conditions - Creating Value LLC",
+                "description": "Terms and Conditions for Creating Value LLC website and services.",
+                "isPartOf": {
+                    "@id": "https://www.creatingvaluellc.com/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://www.creatingvaluellc.com/terms#breadcrumb"
+                },
+                "lastReviewed": "2026-05-12"
             },
             {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Terms & Conditions",
-                "item": "https://www.creatingvaluellc.com/terms"
+                "@type": "BreadcrumbList",
+                "@id": "https://www.creatingvaluellc.com/terms#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.creatingvaluellc.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Terms & Conditions",
+                        "item": "https://www.creatingvaluellc.com/terms"
+                    }
+                ]
             }
         ]
     }

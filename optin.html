@@ -30,28 +30,38 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "SMS Opt-In - Creating Value LLC",
-        "description": "Sign up to receive text messages from Creating Value LLC.",
-        "lastReviewed": "2026-05-12"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
+        "@graph": [
             {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.creatingvaluellc.com"
+                "@type": "WebPage",
+                "@id": "https://www.creatingvaluellc.com/optin",
+                "url": "https://www.creatingvaluellc.com/optin",
+                "name": "SMS Opt-In - Creating Value LLC",
+                "description": "Sign up to receive text messages from Creating Value LLC.",
+                "isPartOf": {
+                    "@id": "https://www.creatingvaluellc.com/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://www.creatingvaluellc.com/optin#breadcrumb"
+                },
+                "lastReviewed": "2026-05-12"
             },
             {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "SMS Opt-In",
-                "item": "https://www.creatingvaluellc.com/optin"
+                "@type": "BreadcrumbList",
+                "@id": "https://www.creatingvaluellc.com/optin#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.creatingvaluellc.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "SMS Opt-In",
+                        "item": "https://www.creatingvaluellc.com/optin"
+                    }
+                ]
             }
         ]
     }

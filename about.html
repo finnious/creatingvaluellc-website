@@ -30,101 +30,111 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://www.creatingvaluellc.com/about#scott-finney",
-        "name": "Scott Finney",
-        "jobTitle": "Founder & AI Automation Consultant",
-        "worksFor": {
-            "@type": "Organization",
-            "name": "Creating Value LLC",
-            "@id": "https://www.creatingvaluellc.com/#organization"
-        },
-        "description": "AI automation consultant and Fractional CTO with 10+ years of software engineering experience. Implements AI automation with real teams in B2B operations daily. Hosts a weekly AI meetup for Memphis businesses and is a 5-year attendee of AI Bot Summit.",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Memphis",
-            "addressRegion": "TN",
-            "addressCountry": "US"
-        },
-        "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "Auburn University",
-            "department": "Management Information Systems"
-        },
-        "knowsAbout": ["Artificial Intelligence", "AI Automation", "Business Process Automation", "AI Strategy", "Lead Scoring", "B2B Sales Enablement", "Fractional CTO", "Agent Orchestration", "AI Speaking"],
-        "memberOf": [
+        "@graph": [
             {
-                "@type": "Organization",
-                "name": "Greater Memphis Chamber",
-                "url": "https://members.memphischamber.com/list/member/creating-value-llc-21365"
+                "@type": "WebPage",
+                "@id": "https://www.creatingvaluellc.com/about",
+                "url": "https://www.creatingvaluellc.com/about",
+                "name": "About Scott Finney - Creating Value LLC",
+                "isPartOf": {
+                    "@id": "https://www.creatingvaluellc.com/#website"
+                },
+                "mainEntity": {
+                    "@id": "https://www.creatingvaluellc.com/about#scott-finney"
+                },
+                "breadcrumb": {
+                    "@id": "https://www.creatingvaluellc.com/about#breadcrumb"
+                },
+                "speakable": {
+                    "@type": "SpeakableSpecification",
+                    "cssSelector": [".about-hero__text"]
+                },
+                "lastReviewed": "2026-05-12"
             },
             {
-                "@type": "Organization",
-                "name": "Page Robbins Adult Day Center",
-                "description": "Board Member"
+                "@type": "BreadcrumbList",
+                "@id": "https://www.creatingvaluellc.com/about#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.creatingvaluellc.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "About",
+                        "item": "https://www.creatingvaluellc.com/about"
+                    }
+                ]
             },
             {
-                "@type": "Organization",
-                "name": "Better Business Bureau"
+                "@type": "Person",
+                "@id": "https://www.creatingvaluellc.com/about#scott-finney",
+                "name": "Scott Finney",
+                "url": "https://www.creatingvaluellc.com/about",
+                "image": "https://www.creatingvaluellc.com/images/scott-finney.jpg",
+                "jobTitle": "Founder & AI Automation Consultant",
+                "worksFor": {
+                    "@id": "https://www.creatingvaluellc.com/#organization"
+                },
+                "description": "AI automation consultant and Fractional CTO with 10+ years of software engineering experience. Implements AI automation with real teams in B2B operations daily. Hosts a weekly AI meetup for Memphis businesses and is a 5-year attendee of AI Bot Summit.",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Memphis",
+                    "addressRegion": "TN",
+                    "addressCountry": "US"
+                },
+                "alumniOf": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Auburn University",
+                    "department": "Management Information Systems"
+                },
+                "knowsAbout": ["Artificial Intelligence", "AI Automation", "Business Process Automation", "AI Strategy", "Lead Scoring", "B2B Sales Enablement", "Fractional CTO", "Agent Orchestration", "AI Speaking"],
+                "memberOf": [
+                    {
+                        "@type": "Organization",
+                        "name": "Greater Memphis Chamber",
+                        "url": "https://members.memphischamber.com/list/member/creating-value-llc-21365"
+                    },
+                    {
+                        "@type": "Organization",
+                        "name": "Page Robbins Adult Day Center",
+                        "description": "Board Member"
+                    },
+                    {
+                        "@type": "Organization",
+                        "name": "Better Business Bureau"
+                    }
+                ],
+                "affiliation": {
+                    "@type": "Organization",
+                    "name": "WeAddBots",
+                    "url": "https://www.weaddbots.com",
+                    "description": "Weekly AI meetup for Memphis businesses, founded by Scott Finney"
+                },
+                "hasOccupation": [
+                    {
+                        "@type": "Occupation",
+                        "name": "AI Automation Consultant",
+                        "occupationalCategory": "15-1252.00",
+                        "experienceRequirements": "10+ years software engineering"
+                    },
+                    {
+                        "@type": "Occupation",
+                        "name": "Fractional CTO"
+                    }
+                ],
+                "sameAs": [
+                    "https://www.linkedin.com/in/scottfinney/",
+                    "https://x.com/createvaluenow",
+                    "https://github.com/finnious",
+                    "https://www.imdb.com/name/nm16016079/",
+                    "https://www.weaddbots.com/about"
+                ]
             }
-        ],
-        "affiliation": {
-            "@type": "Organization",
-            "name": "WeAddBots",
-            "url": "https://www.weaddbots.com",
-            "description": "Weekly AI meetup for Memphis businesses, founded by Scott Finney"
-        },
-        "hasOccupation": [
-            {
-                "@type": "Occupation",
-                "name": "AI Automation Consultant",
-                "occupationalCategory": "15-1252.00",
-                "experienceRequirements": "10+ years software engineering"
-            },
-            {
-                "@type": "Occupation",
-                "name": "Fractional CTO"
-            }
-        ],
-        "sameAs": [
-            "https://www.linkedin.com/in/scottfinney/",
-            "https://x.com/createvaluenow",
-            "https://github.com/finnious",
-            "https://www.imdb.com/name/nm16016079/",
-            "https://www.weaddbots.com/about"
         ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.creatingvaluellc.com"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "About",
-                "item": "https://www.creatingvaluellc.com/about"
-            }
-        ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "About Scott Finney - Creating Value LLC",
-        "speakable": {
-            "@type": "SpeakableSpecification",
-            "cssSelector": [".about-hero__text"]
-        },
-        "lastReviewed": "2026-05-12"
     }
     </script>
 </head>

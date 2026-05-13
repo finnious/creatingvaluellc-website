@@ -117,45 +117,58 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Bicycle Accident 2019 - Scott Finney's Recovery Story",
-        "author": {
-            "@type": "Person",
-            "name": "Scott Finney",
-            "url": "https://www.creatingvaluellc.com/about"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Creating Value LLC",
-            "@id": "https://www.creatingvaluellc.com/#organization"
-        },
-        "datePublished": "2019-09-15",
-        "dateModified": "2026-02-16",
-        "description": "Scott Finney's 2019 bicycle accident story - 6 broken ribs, collapsed lung, and how nerve blocks at Regional One Health helped avoid opioid dependency. A story of recovery, gratitude, and the power of alternative pain management.",
-        "image": "https://www.creatingvaluellc.com/images/bike/Sarah-Scott-No-Surgery.jpg",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://www.creatingvaluellc.com/bicycle-accident-2019"
-        },
-        "keywords": ["bicycle accident", "nerve blocks", "opioid alternative", "Regional One Health", "Memphis", "cycling injury", "trauma recovery"]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
+        "@graph": [
             {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.creatingvaluellc.com"
+                "@type": "WebPage",
+                "@id": "https://www.creatingvaluellc.com/bicycle-accident-2019",
+                "url": "https://www.creatingvaluellc.com/bicycle-accident-2019",
+                "name": "Bicycle Accident 2019 - Scott Finney",
+                "isPartOf": {
+                    "@id": "https://www.creatingvaluellc.com/#website"
+                },
+                "mainEntity": {
+                    "@id": "https://www.creatingvaluellc.com/bicycle-accident-2019#article"
+                },
+                "breadcrumb": {
+                    "@id": "https://www.creatingvaluellc.com/bicycle-accident-2019#breadcrumb"
+                }
             },
             {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Bicycle Accident 2019",
-                "item": "https://www.creatingvaluellc.com/bicycle-accident-2019"
+                "@type": "Article",
+                "@id": "https://www.creatingvaluellc.com/bicycle-accident-2019#article",
+                "headline": "Bicycle Accident 2019 - Scott Finney's Recovery Story",
+                "author": {
+                    "@id": "https://www.creatingvaluellc.com/about#scott-finney"
+                },
+                "publisher": {
+                    "@id": "https://www.creatingvaluellc.com/#organization"
+                },
+                "datePublished": "2019-09-15",
+                "dateModified": "2026-02-16",
+                "description": "Scott Finney's 2019 bicycle accident story - 6 broken ribs, collapsed lung, and how nerve blocks at Regional One Health helped avoid opioid dependency. A story of recovery, gratitude, and the power of alternative pain management.",
+                "image": "https://www.creatingvaluellc.com/images/bike/Sarah-Scott-No-Surgery.jpg",
+                "mainEntityOfPage": {
+                    "@id": "https://www.creatingvaluellc.com/bicycle-accident-2019"
+                },
+                "keywords": ["bicycle accident", "nerve blocks", "opioid alternative", "Regional One Health", "Memphis", "cycling injury", "trauma recovery"]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://www.creatingvaluellc.com/bicycle-accident-2019#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.creatingvaluellc.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Bicycle Accident 2019",
+                        "item": "https://www.creatingvaluellc.com/bicycle-accident-2019"
+                    }
+                ]
             }
         ]
     }

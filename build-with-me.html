@@ -30,28 +30,38 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Join the AI Colony - Build With Me",
-        "description": "Help Scott Finney run Creating Value LLC as a closed-loop intelligence layer. Looking for builders and outcome owners.",
-        "lastReviewed": "2026-05-12"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
+        "@graph": [
             {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.creatingvaluellc.com"
+                "@type": "WebPage",
+                "@id": "https://www.creatingvaluellc.com/build-with-me",
+                "url": "https://www.creatingvaluellc.com/build-with-me",
+                "name": "Join the AI Colony - Build With Me",
+                "description": "Help Scott Finney run Creating Value LLC as a closed-loop intelligence layer. Looking for builders and outcome owners.",
+                "isPartOf": {
+                    "@id": "https://www.creatingvaluellc.com/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://www.creatingvaluellc.com/build-with-me#breadcrumb"
+                },
+                "lastReviewed": "2026-05-12"
             },
             {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Build With Me",
-                "item": "https://www.creatingvaluellc.com/build-with-me"
+                "@type": "BreadcrumbList",
+                "@id": "https://www.creatingvaluellc.com/build-with-me#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.creatingvaluellc.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Build With Me",
+                        "item": "https://www.creatingvaluellc.com/build-with-me"
+                    }
+                ]
             }
         ]
     }

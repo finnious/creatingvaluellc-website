@@ -69,40 +69,56 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Why I Host a Weekly AI Meetup for Memphis Businesses",
-        "author": {
-            "@type": "Person",
-            "name": "Scott Finney",
-            "@id": "https://www.creatingvaluellc.com/about#scott-finney"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Creating Value LLC",
-            "@id": "https://www.creatingvaluellc.com/#organization"
-        },
-        "datePublished": "2026-04-27",
-        "dateModified": "2026-05-12",
-        "description": "Scott Finney on why he hosts WeAddBots, a weekly in-person AI meetup in Memphis. AI moves too fast for anyone alone — community is how we keep up.",
-        "mainEntityOfPage": "https://www.creatingvaluellc.com/community"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
+        "@graph": [
             {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.creatingvaluellc.com"
+                "@type": "WebPage",
+                "@id": "https://www.creatingvaluellc.com/community",
+                "url": "https://www.creatingvaluellc.com/community",
+                "name": "Why I Host a Weekly AI Meetup",
+                "isPartOf": {
+                    "@id": "https://www.creatingvaluellc.com/#website"
+                },
+                "mainEntity": {
+                    "@id": "https://www.creatingvaluellc.com/community#article"
+                },
+                "breadcrumb": {
+                    "@id": "https://www.creatingvaluellc.com/community#breadcrumb"
+                }
             },
             {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Community",
-                "item": "https://www.creatingvaluellc.com/community"
+                "@type": "Article",
+                "@id": "https://www.creatingvaluellc.com/community#article",
+                "headline": "Why I Host a Weekly AI Meetup for Memphis Businesses",
+                "author": {
+                    "@id": "https://www.creatingvaluellc.com/about#scott-finney"
+                },
+                "publisher": {
+                    "@id": "https://www.creatingvaluellc.com/#organization"
+                },
+                "datePublished": "2026-04-27",
+                "dateModified": "2026-05-12",
+                "description": "Scott Finney on why he hosts WeAddBots, a weekly in-person AI meetup in Memphis. AI moves too fast for anyone alone — community is how we keep up.",
+                "mainEntityOfPage": {
+                    "@id": "https://www.creatingvaluellc.com/community"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://www.creatingvaluellc.com/community#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.creatingvaluellc.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Community",
+                        "item": "https://www.creatingvaluellc.com/community"
+                    }
+                ]
             }
         ]
     }
