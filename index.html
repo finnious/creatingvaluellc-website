@@ -77,6 +77,9 @@
                 "url": "https://www.creatingvaluellc.com",
                 "logo": "https://www.creatingvaluellc.com/images/og-image.png",
                 "description": "AI automation and consulting for growth-minded B2B businesses",
+                "naics": "541611",
+                "slogan": "AI automation and consulting for growth-minded B2B businesses",
+                "knowsAbout": ["AI Automation", "Business Process Automation", "B2B Sales Enablement", "AI Strategy", "Fractional CTO"],
                 "founder": {
                     "@id": "https://www.creatingvaluellc.com/about#scott-finney"
                 },
@@ -97,17 +100,31 @@
                     "https://members.memphischamber.com/list/member/creating-value-llc-21365"
                 ],
                 "subOrganization": {
-                    "@type": "Organization",
-                    "name": "WeAddBots",
-                    "url": "https://www.weaddbots.com",
-                    "description": "Weekly AI meetup and automation community for Memphis businesses"
+                    "@id": "https://www.weaddbots.com/#organization"
                 }
             },
             {
-                "@type": "LocalBusiness",
+                "@type": "Organization",
+                "@id": "https://www.weaddbots.com/#organization",
+                "name": "WeAddBots",
+                "url": "https://www.weaddbots.com",
+                "description": "Weekly AI meetup and automation community for Memphis businesses, founded by Scott Finney.",
+                "founder": {
+                    "@id": "https://www.creatingvaluellc.com/about#scott-finney"
+                },
+                "parentOrganization": {
+                    "@id": "https://www.creatingvaluellc.com/#organization"
+                },
+                "sameAs": [
+                    "https://www.weaddbots.com/about"
+                ]
+            },
+            {
+                "@type": ["LocalBusiness", "ProfessionalService"],
                 "@id": "https://www.creatingvaluellc.com/#localbusiness",
                 "name": "Creating Value LLC",
                 "description": "AI automation and consulting for growth-minded B2B businesses. Boutique consulting from a Fractional CTO with hands-on experience implementing AI in multi-location B2B operations.",
+                "naics": "541611",
                 "url": "https://www.creatingvaluellc.com",
                 "telephone": "+1-901-878-5916",
                 "email": "scott@creatingvaluellc.com",
