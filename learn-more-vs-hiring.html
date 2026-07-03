@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DRAFT: not indexable, not in sitemap, not linked from nav. Pending review. -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+
+    <link rel="canonical" href="https://www.creatingvaluellc.com/learn-more-vs-hiring">
+    <title>Why Build Instead of Hire | Creating Value LLC</title>
+    <meta name="description" content="A full-time technical hire is a six-figure bet that takes months to pay off. Creating Value LLC takes the role on a project basis — first useful systems in week one, running on the tools you already own.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Why Build Instead of Hire | Creating Value LLC">
+    <meta property="og:description" content="Skip the six-figure hire. Get working systems on your own tools, first deliverables in week one.">
+    <meta property="og:image" content="https://www.creatingvaluellc.com/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://www.creatingvaluellc.com/learn-more-vs-hiring">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@createvaluenow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/CVMARK_black.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": "https://www.creatingvaluellc.com/learn-more-vs-hiring",
+                "url": "https://www.creatingvaluellc.com/learn-more-vs-hiring",
+                "name": "Why Build Instead of Hire",
+                "description": "Why a project-based build beats a full-time technical hire for growth-minded SMBs — and the free Systems Snapshot that shows you the fastest fix.",
+                "isPartOf": { "@id": "https://www.creatingvaluellc.com/#website" },
+                "about": { "@id": "https://www.creatingvaluellc.com/#organization" },
+                "breadcrumb": { "@id": "https://www.creatingvaluellc.com/learn-more-vs-hiring#breadcrumb" },
+                "mainEntity": { "@id": "https://www.creatingvaluellc.com/learn-more-vs-hiring#service" },
+                "lastReviewed": "2026-07-03"
+            },
+            {
+                "@type": "Service",
+                "@id": "https://www.creatingvaluellc.com/learn-more-vs-hiring#service",
+                "name": "Fractional technical leadership & business systems architecture",
+                "serviceType": "Business systems architecture",
+                "description": "Project-based technical leadership: we decide what to build, build it, and hand it back running on your own Google Workspace and existing tools — an alternative to a full-time in-house IT or developer hire.",
+                "provider": { "@id": "https://www.creatingvaluellc.com/#organization" },
+                "areaServed": { "@type": "Country", "name": "United States" }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://www.creatingvaluellc.com/learn-more-vs-hiring#breadcrumb",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.creatingvaluellc.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Why Build Instead of Hire", "item": "https://www.creatingvaluellc.com/learn-more-vs-hiring" }
+                ]
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        /* Learn-more landing page styles */
+        .lm-hero { padding: var(--space-3xl) 0 var(--space-xl); text-align: center; }
+        .lm-hero h1 { max-width: 800px; margin: 0 auto var(--space-md); }
+        .lm-hero .lead { font-size: clamp(1.05rem, 2.5vw, 1.2rem); color: var(--gray-600); max-width: 660px; margin: 0 auto var(--space-lg); line-height: 1.7; }
+        .lm-eyebrow { display: inline-block; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8rem; font-weight: 700; color: var(--teal); margin-bottom: var(--space-sm); }
+        .lm-section { padding: var(--space-xl) 0; }
+        .lm-section.alt { background: var(--gray-50); }
+        .lm-section h2 { margin-bottom: var(--space-sm); }
+        .lm-section p { color: var(--gray-700); line-height: 1.7; }
+        .lm-section p + p { margin-top: var(--space-sm); }
+        .lm-list { list-style: none; padding: 0; margin: var(--space-md) 0 0; }
+        .lm-list li { position: relative; padding-left: 1.6rem; margin-bottom: 0.7rem; color: var(--gray-700); line-height: 1.6; }
+        .lm-list li::before { content: ''; position: absolute; left: 0; top: 0.55rem; width: 8px; height: 8px; background: var(--teal); border-radius: 50%; }
+        .lm-list li strong { color: var(--black); }
+        .lm-source { font-size: 0.85rem; color: var(--gray-600); font-style: italic; margin-top: 0.25rem; }
+        .lm-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-md); margin: var(--space-lg) 0 var(--space-md); }
+        .lm-stat { text-align: center; background: var(--white); border: 1px solid var(--gray-200); border-radius: 12px; padding: var(--space-md); }
+        .lm-stat .num { font-size: clamp(1.4rem, 3.5vw, 2rem); font-weight: 800; color: var(--navy); line-height: 1.1; }
+        .lm-stat .lbl { display: block; margin-top: 0.4rem; font-size: 0.82rem; color: var(--gray-600); line-height: 1.4; }
+        @media (max-width: 640px) { .lm-stats { grid-template-columns: repeat(2, 1fr); } }
+        .lm-callout { background: var(--white); border: 1px solid var(--gray-200); border-left: 4px solid var(--teal); border-radius: 10px; padding: var(--space-md) var(--space-lg); margin-top: var(--space-md); }
+        .lm-callout p { margin: 0; }
+        .cta .btn { margin-top: var(--space-sm); }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="header__logo">
+                    <img src="/images/CV_logotype_black.png" alt="Creating Value LLC">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="/" class="nav__link">Home</a></li>
+                        <li><a href="/about" class="nav__link">About</a></li>
+                        <li><a href="/contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav__list">
+            <li><a href="/" class="mobile-nav__link">Home</a></li>
+            <li><a href="/about" class="mobile-nav__link">About</a></li>
+            <li><a href="/contact" class="mobile-nav__link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="lm-hero">
+        <div class="container">
+            <span class="lm-eyebrow">Build vs. Hire</span>
+            <h1>You don't need to hire. You need it built.</h1>
+            <p class="lead">Creating Value LLC — the systems layer between the tools you already pay for and the people who keep your business running.</p>
+            <a href="/contact" class="btn btn--primary btn--large">Book your free Systems Snapshot</a>
+        </div>
+    </section>
+
+    <!-- The math -->
+    <section class="lm-section alt">
+        <div class="container container--narrow">
+            <h2>The hire feels safe. The math rarely is.</h2>
+            <p>Hiring a technical person feels like the responsible move — a real employee, on the team, owning the problem. But look at what the hire actually asks of you:</p>
+            <ul class="lm-list">
+                <li><strong>Months before value.</strong> Sourcing, interviewing, offer, notice period, onboarding, ramp. You're often two quarters in before the first useful thing ships.</li>
+                <li><strong>A permanent cost for a project-shaped need.</strong> Most of what you need is a burst of building — get the systems connected, get the reports flowing — not a full-time seat forever. A salary doesn't flex down when the build is done.</li>
+                <li><strong>A single skill ceiling.</strong> One person is strong in one area. The work you need spans data, automation, reporting, and judgment about <em>what</em> to build. Few individuals cover all of it, and the ones who do don't take a mid-market salary.</li>
+                <li><strong>Management overhead.</strong> Now you're reviewing, unblocking, and retaining them — on top of running the business.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- What build instead looks like -->
+    <section class="lm-section">
+        <div class="container container--narrow">
+            <h2>What "build instead" actually looks like</h2>
+            <p>We take the technical-decision-maker role on a project basis. We decide what gets built, build it, and hand it back running on your own systems. You get the judgment of a technology leader and the output of a builder — without the salary, the ramp, or the department to manage.</p>
+            <p><strong>The method:</strong> AI pair-programming lets one senior operator move like a small team. In one engagement, that meant <strong>15 design iterations in a single 2-hour session</strong> and a full inventory pipeline going from discovered-in-audit to deployed-and-running in one working day. No tickets. No handoffs. No meetings about meetings.</p>
+        </div>
+    </section>
+
+    <!-- Proof -->
+    <section class="lm-section alt">
+        <div class="container container--narrow">
+            <span class="lm-eyebrow">Proof it works</span>
+            <h2>What that looked like in practice</h2>
+            <p class="lm-source">From one engagement — an anonymized multi-location distribution company.</p>
+            <div class="lm-stats">
+                <div class="lm-stat"><div class="num">Week 1</div><span class="lbl">First useful deliverables shipped</span></div>
+                <div class="lm-stat"><div class="num">$90K&ndash;150K</div><span class="lbl">Annual salary avoided</span></div>
+                <div class="lm-stat"><div class="num">12 &rarr; 1</div><span class="lbl">Report versions consolidated</span></div>
+                <div class="lm-stat"><div class="num">0</div><span class="lbl">New software purchased</span></div>
+            </div>
+            <ul class="lm-list">
+                <li><strong>~30,000 SKUs</strong> turned into daily actionable reports, from a 57,558-row export</li>
+                <li><strong>12 &rarr; 1</strong> report versions consolidated into a single clean pipeline</li>
+                <li><strong>86 export jobs + 50 automation projects</strong> audited — 2 found failing silently every day</li>
+                <li><strong>6 distinct roles</strong> served with purpose-built reports; <strong>$272K+</strong> equipment monitored daily</li>
+                <li><strong>50 projects</strong> organized into one repository with a shared library, so the team owns it all</li>
+                <li><strong>0</strong> new software purchased — everything on the client's own Google Workspace + POS</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Ownership -->
+    <section class="lm-section">
+        <div class="container container--narrow">
+            <h2>You keep everything</h2>
+            <p>This is the part a contractor usually gets wrong and a hire promises but rarely delivers: <strong>you own the output.</strong> Everything runs on the systems you already pay for. It's documented, named consistently, and organized so your team can maintain it after we're gone. No lock-in, no dependency on us, no black box.</p>
+        </div>
+    </section>
+
+    <!-- Right for you if -->
+    <section class="lm-section alt">
+        <div class="container container--narrow">
+            <h2>Right for you if</h2>
+            <div class="lm-callout">
+                <p>You're on Google Workspace, already established (already selling, already profitable — roughly $5M&ndash;$50M, 5&ndash;100 people), you have real people doing real work across locations or departments, and you have tools but no IT team making them work together.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="cta">
+        <div class="container container--narrow">
+            <h2>The next step is free</h2>
+            <p>Before you commit to anyone — a hire or us — get a Systems Snapshot: a free, no-pitch, 20-minute look at where your tools are leaking time. We'll point to the single fastest, highest-impact fix and tell you what it would take. If a hire is genuinely the right call, we'll say so.</p>
+            <a href="/contact" class="btn btn--primary btn--large">Book your free Systems Snapshot</a>
+        </div>
+    </section>
+
+    <!-- Freshness Signal -->
+    <div class="freshness">Draft — last updated: July 3, 2026</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo-group">
+                        <img src="/images/CVMARK_white.png" alt="" class="footer__mark">
+                        <img src="/images/CV_logotype_white.png" alt="Creating Value" class="footer__logotype">
+                    </div>
+                    <p>AI automation and consulting for growth-minded B2B businesses. Based in Memphis, serving clients nationwide.</p>
+                    <p class="footer__contact">🌎 Memphis, TN USA</p>
+                    <p class="footer__contact">📞 <a href="tel:+19018785916">(901) 878-5916</a></p>
+                </div>
+                <div class="footer__nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/build-with-me">Build With Me</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://www.weaddbots.com" target="_blank" rel="noopener">WeAddBots</a></li>
+                        <li><a href="https://www.linkedin.com/in/scottfinney/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://www.youtube.com/@CreatingValueLLCMemphis" target="_blank" rel="noopener">YouTube</a></li>
+                        <li><a href="https://x.com/createvaluenow" target="_blank" rel="noopener">X / Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Creating Value LLC. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="/terms">Terms & Conditions</a>
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/llms.txt">llms.txt</a>
+                    <a href="/sitemap.xml">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        menuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) { header.classList.add('header--scrolled'); }
+            else { header.classList.remove('header--scrolled'); }
+        });
+    </script>
+
+    <!-- Google Analytics GA4 (zero perf impact) -->
+    <script>
+        function _ga4(){
+            var m='G-9Y9MRT5LPJ',c=localStorage.getItem('_ga_cid');
+            if(!c){c=Math.random().toString(36).substr(2)+Date.now().toString(36);localStorage.setItem('_ga_cid',c);}
+            navigator.sendBeacon('https://www.google-analytics.com/g/collect?v=2&tid='+m+'&cid='+c+'&sid='+Date.now()+'&dl='+encodeURIComponent(location.href)+'&dt='+encodeURIComponent(document.title)+'&dr='+encodeURIComponent(document.referrer)+'&en=page_view');
+        }
+        if('requestIdleCallback' in window){requestIdleCallback(function(){setTimeout(_ga4,3000)});}
+        else{window.addEventListener('load',function(){setTimeout(_ga4,5000)});}
+    </script>
+
+    <!-- Clicky Analytics (deferred) -->
+    <script>
+        window.addEventListener('load', function() {
+            var s = document.createElement('script');
+            s.src = '//static.getclicky.com/101462603.js';
+            s.async = true;
+            document.body.appendChild(s);
+        });
+    </script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101462603ns.gif" /></p></noscript>
+</body>
+</html>
