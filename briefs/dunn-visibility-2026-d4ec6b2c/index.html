@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<title>Local Visibility Opportunity Brief — Dunn Family Businesses</title>
+<style>
+  :root{
+    --bg:#E7E3D8; --surface:#F4F1E9; --surface-2:#ECE8DD; --ink:#211E17; --muted:#6C6558;
+    --line:#D3CDBD; --accent:#1B5568; --accent-soft:rgba(27,85,104,.10);
+    --good:#3C7A56; --warn:#AF7C26; --crit:#A5473A;
+    --good-soft:rgba(60,122,86,.14); --warn-soft:rgba(175,124,38,.15); --crit-soft:rgba(165,71,58,.14);
+    --font-display:"Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+    --font-body:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --font-mono:ui-monospace,"SF Mono","Cascadia Mono",Menlo,Consolas,monospace;
+    --maxw:1020px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#121A1B; --surface:#1A2425; --surface-2:#212E2E; --ink:#EBE5D7; --muted:#978F7E;
+      --line:#2C3838; --accent:#66B0C4; --accent-soft:rgba(102,176,196,.14);
+      --good:#6FB088; --warn:#D6A54A; --crit:#D6796B;
+      --good-soft:rgba(111,176,136,.16); --warn-soft:rgba(214,165,74,.16); --crit-soft:rgba(214,121,107,.16);
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0; padding:0}
+  .page{
+    background:var(--bg); color:var(--ink); font-family:var(--font-body);
+    line-height:1.6; -webkit-font-smoothing:antialiased; min-height:100vh;
+    padding:clamp(20px,5vw,64px) clamp(16px,4vw,40px);
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto}
+  .mast{
+    border:1px solid var(--line); background:var(--surface);
+    border-radius:3px; padding:clamp(24px,4vw,40px);
+    position:relative; overflow:hidden;
+  }
+  .mast::before{
+    content:""; position:absolute; left:0; top:0; bottom:0; width:6px;
+    background:repeating-linear-gradient(var(--accent) 0 10px, transparent 10px 20px);
+    opacity:.9;
+  }
+  .eyebrow{
+    font-family:var(--font-mono); font-size:12px; letter-spacing:.22em; text-transform:uppercase;
+    color:var(--accent); margin:0 0 14px; font-weight:600;
+  }
+  h1{
+    font-family:var(--font-display); font-weight:600; letter-spacing:-.01em;
+    font-size:clamp(28px,4.6vw,44px); line-height:1.08; margin:0 0 12px; text-wrap:balance;
+  }
+  .sub{font-size:clamp(15px,1.7vw,18px); color:var(--muted); margin:0 0 22px; max-width:60ch}
+  .meta{
+    display:flex; flex-wrap:wrap; gap:8px 28px; padding-top:18px; border-top:1px solid var(--line);
+    font-family:var(--font-mono); font-size:12.5px; color:var(--muted);
+  }
+  .meta b{color:var(--ink); font-weight:600}
+  section{margin-top:clamp(30px,4vw,46px)}
+  .sec-head{display:flex; align-items:baseline; gap:14px; margin:0 0 18px}
+  .sec-num{font-family:var(--font-mono); font-size:12px; color:var(--accent); letter-spacing:.1em; padding-top:4px}
+  h2{font-family:var(--font-display); font-weight:600; font-size:clamp(21px,2.6vw,27px); margin:0; letter-spacing:-.01em; text-wrap:balance}
+  .thesis{
+    background:var(--accent-soft); border:1px solid var(--line); border-left:3px solid var(--accent);
+    border-radius:3px; padding:clamp(20px,3vw,30px);
+  }
+  .thesis p{margin:0; font-family:var(--font-display); font-size:clamp(18px,2.3vw,23px); line-height:1.4}
+  .thesis .lead{color:var(--accent); font-style:italic}
+  .scroll{overflow-x:auto; border:1px solid var(--line); border-radius:3px; background:var(--surface)}
+  table{border-collapse:collapse; width:100%; min-width:560px; font-size:14.5px}
+  caption{text-align:left; padding:14px 18px; font-family:var(--font-mono); font-size:11.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); border-bottom:1px solid var(--line)}
+  th,td{text-align:left; padding:13px 18px; border-bottom:1px solid var(--line); vertical-align:middle}
+  thead th{font-family:var(--font-mono); font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); font-weight:600; background:var(--surface-2)}
+  tbody tr:last-child td{border-bottom:none}
+  .rowlabel{color:var(--muted); font-weight:500; width:34%}
+  .biz{font-family:var(--font-display); font-size:15px}
+  .num{font-family:var(--font-mono); font-variant-numeric:tabular-nums; font-weight:600}
+  td .note{display:block; font-size:12px; color:var(--muted); font-family:var(--font-body); margin-top:2px}
+  .pill{display:inline-flex; align-items:center; gap:6px; font-family:var(--font-mono); font-size:11.5px; font-weight:600; letter-spacing:.03em; padding:3px 9px; border-radius:100px; white-space:nowrap; border:1px solid transparent}
+  .pill::before{content:""; width:6px; height:6px; border-radius:50%; background:currentColor}
+  .pill.good{color:var(--good); background:var(--good-soft); border-color:var(--good)}
+  .pill.warn{color:var(--warn); background:var(--warn-soft); border-color:var(--warn)}
+  .pill.crit{color:var(--crit); background:var(--crit-soft); border-color:var(--crit)}
+  .levers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:12px; counter-reset:l}
+  .lever{
+    counter-increment:l; display:grid; grid-template-columns:auto 1fr; gap:16px 18px; align-items:start;
+    background:var(--surface); border:1px solid var(--line); border-radius:3px; padding:18px 20px;
+  }
+  .lever::before{
+    content:counter(l,decimal-leading-zero); font-family:var(--font-mono); font-size:15px; font-weight:600;
+    color:var(--bg); background:var(--accent); width:34px; height:34px; border-radius:3px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .lever h3{margin:0 0 3px; font-size:16px; font-family:var(--font-body); font-weight:650}
+  .lever p{margin:0; color:var(--muted); font-size:14px}
+  .lever .tag{font-family:var(--font-mono); font-size:11px; color:var(--accent); letter-spacing:.06em; text-transform:uppercase}
+  .cards{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:3px; padding:22px 22px 20px}
+  .card h3{font-family:var(--font-display); font-size:19px; font-weight:600; margin:0 0 2px}
+  .card .url{font-family:var(--font-mono); font-size:12px; color:var(--accent); margin:0 0 16px; word-break:break-all}
+  .flist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px}
+  .flist li{display:grid; grid-template-columns:auto 1fr; gap:11px; font-size:13.5px; line-height:1.45}
+  .dot{width:8px; height:8px; border-radius:50%; margin-top:6px}
+  .dot.good{background:var(--good)} .dot.warn{background:var(--warn)} .dot.crit{background:var(--crit)}
+  .flist b{font-weight:650}
+  .scope{display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line); border-radius:3px; overflow:hidden}
+  .scope > div{padding:22px 24px}
+  .scope .yes{background:var(--surface)}
+  .scope .no{background:var(--surface-2); border-left:1px solid var(--line)}
+  .scope h4{margin:0 0 12px; font-family:var(--font-mono); font-size:11.5px; letter-spacing:.12em; text-transform:uppercase}
+  .scope .yes h4{color:var(--good)} .scope .no h4{color:var(--muted)}
+  .scope ul{margin:0; padding-left:18px; display:flex; flex-direction:column; gap:7px; font-size:14px}
+  .scope .no ul{color:var(--muted)}
+  footer{margin-top:clamp(30px,4vw,46px); padding-top:22px; border-top:1px solid var(--line); display:flex; flex-wrap:wrap; justify-content:space-between; gap:16px; align-items:flex-end}
+  .sig .name{font-family:var(--font-display); font-size:18px; font-weight:600}
+  .sig .co{font-family:var(--font-mono); font-size:12px; color:var(--accent); letter-spacing:.08em}
+  .caveat{font-size:11.5px; color:var(--muted); max-width:46ch; font-family:var(--font-mono); line-height:1.6}
+  @media (max-width:680px){
+    .cards{grid-template-columns:1fr}
+    .scope{grid-template-columns:1fr}
+    .scope .no{border-left:none; border-top:1px solid var(--line)}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="wrap">
+
+    <header class="mast">
+      <p class="eyebrow">Creating Value LLC · Local Visibility Brief</p>
+      <h1>You're a 5-star shop that's hard to find. That's the good news.</h1>
+      <p class="sub">A first-pass look at where David Dunn &amp; Sons and Advanced Kitchen &amp; Bath are leaving leads on the table — and the shortest path to more calls.</p>
+      <div class="meta">
+        <span>Prepared for <b>Dan &amp; David Dunn</b></span>
+        <span>By <b>Scott · Creating Value LLC</b></span>
+        <span>July 15, 2026</span>
+        <span>Source: <b>public data</b></span>
+      </div>
+    </header>
+
+    <section>
+      <div class="thesis">
+        <p><span class="lead">The whole story in one line:</span> both businesses do excellent work and have the 5-star reviews to prove it — but your Google presence is thin and looks unmanaged, so buyers searching right now mostly don't see you. None of the fixes require rebuilding your websites.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="sec-head"><span class="sec-num">01</span><h2>The local scoreboard</h2></div>
+      <div class="scroll">
+        <table>
+          <caption>What Google shows a customer today</caption>
+          <thead>
+            <tr><th scope="col">Signal</th><th scope="col">David Dunn &amp; Sons</th><th scope="col">Advanced Kitchen &amp; Bath</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="rowlabel">Google rating</th>
+              <td><span class="num">5.0</span> ★</td>
+              <td><span class="num">4.8</span> ★</td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowlabel">Google reviews</th>
+              <td><span class="num">6</span> &nbsp;<span class="pill warn">too few</span></td>
+              <td><span class="num">14</span> &nbsp;<span class="pill warn">too few</span></td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowlabel">Business Profile claimed?</th>
+              <td><span class="pill crit">looks unclaimed</span><span class="note">To confirm — Google shows "Own this business?"</span></td>
+              <td><span class="pill crit">looks unclaimed</span><span class="note">To confirm — Google shows "Own this business?"</span></td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowlabel">Google category</th>
+              <td>Construction company <span class="pill warn">too generic</span></td>
+              <td>Kitchen remodeler <span class="pill good">good fit</span></td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowlabel">Name &amp; address consistency</th>
+              <td><span class="pill good">consistent</span></td>
+              <td><span class="pill crit">conflicts</span><span class="note">Profile says Fort Mill; website says Indian Land</span></td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowlabel">Website health</th>
+              <td><span class="pill good">clean &amp; fast</span></td>
+              <td><span class="pill good">clean</span></td>
+            </tr>
+            <tr>
+              <th scope="row" class="rowlabel">Found for "…in Fort Mill" searches</th>
+              <td><span class="pill warn">no local pages</span></td>
+              <td><span class="pill warn">no local pages</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="sec-head"><span class="sec-num">02</span><h2>The biggest levers, in order</h2></div>
+      <ol class="levers">
+        <li class="lever">
+          <div><h3>Claim &amp; verify both Google Business Profiles <span class="tag">highest impact</span></h3>
+          <p>If nobody's managing them, this is the single fastest win — it unlocks reviews, photos, categories, and the "call" button that drives the local map results.</p></div>
+        </li>
+        <li class="lever">
+          <div><h3>Turn on a steady review engine</h3>
+          <p>Going from 6 → 50+ and 14 → 50+ reviews is the biggest driver of where you rank in the map pack. A simple after-job ask, made routine, compounds fast.</p></div>
+        </li>
+        <li class="lever">
+          <div><h3>Fix the name &amp; address conflicts</h3>
+          <p>Advanced's profile says Fort Mill while the site says Indian Land, and both brands share one building. Google needs one clean, consistent story per business to trust and rank either.</p></div>
+        </li>
+        <li class="lever">
+          <div><h3>Add "local business" markup + fix the category</h3>
+          <p>Both sites tell Google they're a generic "organization," not a local contractor with services and a service area. A quick, behind-the-scenes upgrade that helps in search and in AI answers.</p></div>
+        </li>
+        <li class="lever">
+          <div><h3>Clean up the pages that undercut trust</h3>
+          <p>Advanced has placeholder "Lorem Ipsum" text still live on two pages and several thin pages; both sites carry heavy, uncompressed images that slow phones down. Small fixes, real polish.</p></div>
+        </li>
+        <li class="lever">
+          <div><h3>Build service-area pages for the searches buyers type</h3>
+          <p>"Deck builder in Fort Mill," "kitchen remodel Indian Land" — you have the services, just not the pages that capture those geo-specific searches.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <div class="sec-head"><span class="sec-num">03</span><h2>What we found on each site</h2></div>
+      <div class="cards">
+        <div class="card">
+          <h3>David Dunn &amp; Sons</h3>
+          <p class="url">daviddunnsons.com</p>
+          <ul class="flist">
+            <li><span class="dot good"></span><span><b>Solid, fast site</b> — 13 pages, no broken links, quick to load.</span></li>
+            <li><span class="dot good"></span><span><b>Markup already present</b> sitewide — just typed generically, not as a local business.</span></li>
+            <li><span class="dot warn"></span><span><b>Heavy images</b> — 69 of 98 over 100&nbsp;KB, the main drag on phone speed.</span></li>
+            <li><span class="dot warn"></span><span><b>Thin structure</b> on several service pages (no subheadings, light copy).</span></li>
+            <li><span class="dot crit"></span><span><b>Only 6 Google reviews</b> and a profile that looks unmanaged.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Advanced Kitchen &amp; Bath</h3>
+          <p class="url">advkitchenandbathdesign.com</p>
+          <ul class="flist">
+            <li><span class="dot good"></span><span><b>Clean foundation</b> — 17 pages, no broken links, good raw content to build on.</span></li>
+            <li><span class="dot crit"></span><span><b>Placeholder text live</b> — "Lorem Ipsum" dummy copy still on two pages.</span></li>
+            <li><span class="dot crit"></span><span><b>Markup on the homepage only</b> — the other 16 pages have none.</span></li>
+            <li><span class="dot warn"></span><span><b>6 of 17 pages thin</b>; 328 images heavy and missing alt text.</span></li>
+            <li><span class="dot crit"></span><span><b>Address conflict</b> between the profile and the website.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="sec-head"><span class="sec-num">04</span><h2>How we'd work together</h2></div>
+      <div class="scope">
+        <div class="yes">
+          <h4>What Creating Value delivers</h4>
+          <ul>
+            <li>A full audit of both businesses' search &amp; local visibility</li>
+            <li>A prioritized, specific "do this first" action plan</li>
+            <li>Plain-English guidance your team can execute against</li>
+            <li>A re-check to measure movement once the work is done</li>
+          </ul>
+        </div>
+        <div class="no">
+          <h4>What runs on your side</h4>
+          <ul>
+            <li>Hands-on implementation of the fixes</li>
+            <li>Making the profile, website, and review changes</li>
+            <li>We advise and guide — your team executes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="sig">
+        <div class="name">Scott</div>
+        <div class="co">CREATING VALUE LLC</div>
+      </div>
+      <p class="caveat">Based on publicly available data as of July 15, 2026. Profile "claimed" status is inferred from Google's public "Own this business?" prompt and to be confirmed with the owners. No metrics estimated or invented.</p>
+    </footer>
+
+  </div>
+</div>
+</body>
+</html>
